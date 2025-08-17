@@ -37,6 +37,6 @@ export class Hook {
         } else if (hook === SimpleCalendarHooks.PrimaryGM) {
             data["isPrimaryGM"] = SC.primary;
         }
-        Hooks.callAll("simple-calendar-date-time-change", data);
+        Hooks.callAll(hook, data);
     }
 }
