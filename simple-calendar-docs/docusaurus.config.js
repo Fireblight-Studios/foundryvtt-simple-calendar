@@ -235,7 +235,7 @@ const config = {
                         dropdownActiveClassDisabled: true
                     },
                     {
-                        href: "https://github.com/vigoren/foundryvtt-simple-calendar",
+                        href: "https://github.com/Fireblight-Studios/foundryvtt-simple-calendar",
                         position: "right",
                         className: "header-github-link",
                         "aria-label": "GitHub repository"
@@ -258,11 +258,11 @@ const config = {
                             },
                             {
                                 label: "License",
-                                href: "https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/LICENSE"
+                                href: "https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/blob/main/LICENSE"
                             },
                             {
                                 label: "Contributing",
-                                href: "https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/CONTRIBUTING.md"
+                                href: "https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/blob/main/CONTRIBUTING.md"
                             }
                         ]
                     },
@@ -279,7 +279,7 @@ const config = {
                             },
                             {
                                 label: "GitHub",
-                                href: "https://github.com/vigoren/foundryvtt-simple-calendar"
+                                href: "https://github.com/Fireblight-Studios/foundryvtt-simple-calendar"
                             },
                             {
                                 label: "Foundry Hub - Weblate",

@@ -160,7 +160,7 @@ export default class ConfigurationApp extends FormApplication {
      */
     static get defaultOptions() {
         const options = super.defaultOptions;
-        options.template = "modules/foundryvtt-simple-calendar/templates/configuration.html";
+        options.template = "modules/foundryvtt-simple-calendar-reborn/templates/configuration.html";
         options.title = "FSC.Configuration.Title";
         options.id = this.appWindowId;
         options.classes = ["simple-calendar", "fsc-simple-calendar-configuration"];
@@ -241,8 +241,8 @@ export default class ConfigurationApp extends FormApplication {
             ...(await super.getData(options)),
             activeCalendarId: (<Calendar>this.object).id,
             images: {
-                compactViewLayoutFull: foundryGetRoute("/modules/foundryvtt-simple-calendar/assets/sc-v2-theme-dark-comp.png"),
-                compactViewLayoutQuickIncrement: foundryGetRoute("/modules/foundryvtt-simple-calendar/assets/sc-v2-theme-dark-comp-qi.png")
+                compactViewLayoutFull: foundryGetRoute("/modules/foundryvtt-simple-calendar-reborn/assets/sc-v2-theme-dark-comp.png"),
+                compactViewLayoutQuickIncrement: foundryGetRoute("/modules/foundryvtt-simple-calendar-reborn/assets/sc-v2-theme-dark-comp-qi.png")
             },
             calendars: this.calendars,
             clientSettings: {

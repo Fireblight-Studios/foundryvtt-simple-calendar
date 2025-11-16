@@ -193,7 +193,7 @@
 	"FSC.Moon.Phase.WaningCrescent": "그믐달",
 	"FSC.Configuration.Title": "달력 설정",
 	"FSC.Configuration.Description": "이 양식을 사용하면 현재 연도, 월, 월 이름 및 일 수를 지정하여 게임 달력을 커스터마이징 할 수 있습니다.",
-	"FSC.Configuration.Help": "달력 구성에 대한 도움말을 보려면 <a href='https://github.com/vigoren/foundryvtt-simple-calendar/tree/main/docs/Configuration.md' target='_blank'>이 문서</a>를 확인해주세요!",
+	"FSC.Configuration.Help": "달력 구성에 대한 도움말을 보려면 <a href='https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/tree/main/docs/Configuration.md' target='_blank'>이 문서</a>를 확인해주세요!",
 	"FSC.Configuration.Save": "설정 저장",
 	"FSC.Configuration.General.Title": "일반적 설정",
 	"FSC.Configuration.General.PreDefined": "기존 설정 달력",

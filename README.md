@@ -1,10 +1,10 @@
-[![Supported Foundry Versions](https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://github.com/vigoren/foundryvtt-simple-calendar/releases/latest/download/module.json)](https://foundryvtt.com/releases/)
+[![Supported Foundry Versions](https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/releases/latest/download/module.json)](https://foundryvtt.com/releases/)
 ![](https://img.shields.io/endpoint?url=https%3A%2F%2Ffoundryshields.com%2Fsystem%3FnameType%3Dfull%26showVersion%3D1%26url%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Fvigoren%2Ffoundryvtt-simple-calendar%2Fmain%2Fsrc%2Fmodule.json)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/vigoren/foundryvtt-simple-calendar)
-[![license](https://img.shields.io/badge/license-MIT-blue)](https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/LICENSE)
+[![license](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/blob/main/LICENSE)
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/vigoren/foundryvtt-simple-calendar/node.js.yml)
 [![codecov](https://codecov.io/gh/vigoren/foundryvtt-simple-calendar/branch/main/graph/badge.svg?token=43TJ117WP1)](https://codecov.io/gh/vigoren/foundryvtt-simple-calendar)
-[![GitHub release (latest by date)](https://img.shields.io/github/downloads/vigoren/foundryvtt-simple-calendar/latest/module.zip)](https://github.com/vigoren/foundryvtt-simple-calendar/releases/latest)
+[![GitHub release (latest by date)](https://img.shields.io/github/downloads/vigoren/foundryvtt-simple-calendar/latest/module.zip)](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/releases/latest)
 [![forge](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%&url=https://forge-vtt.com/api/bazaar/package/foundryvtt-simple-calendar&colorB=3d8b41)](https://forge-vtt.com/bazaar#package=foundryvtt-simple-calendar)
 [![Foundry Hub Endorsements](https://img.shields.io/endpoint?logoColor=white&url=https://www.foundryvtt-hub.com/wp-json/hubapi/v1/package/foundryvtt-simple-calendar/shield/endorsements)](https://www.foundryvtt-hub.com/package/foundryvtt-simple-calendar/)
 [![Foundry Hub Comments](https://img.shields.io/endpoint?logoColor=white&url=https://www.foundryvtt-hub.com/wp-json/hubapi/v1/package/foundryvtt-simple-calendar/shield/comments)](https://www.foundryvtt-hub.com/package/foundryvtt-simple-calendar/)
@@ -90,7 +90,7 @@ Foundry has a built-in directory of modules that you can install. The easiest wa
 
 #### module.json
 
-Through the same built-in module installer in foundry, you can specify the link of the module to install instead of searching the directory. To install using the module json file, use this link [https://github.com/vigoren/foundryvtt-simple-calendar/releases/latest/download/module.json](https://github.com/vigoren/foundryvtt-simple-calendar/releases/latest/download/module.json)
+Through the same built-in module installer in foundry, you can specify the link of the module to install instead of searching the directory. To install using the module json file, use this link [https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/releases/latest/download/module.json](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/releases/latest/download/module.json)
 
 #### Zip File
 
@@ -110,7 +110,7 @@ If you would like to contribute to the Simple Calendar module check out the [con
 Have questions? Ran into a bug? There are a couple of ways you can get help!
 
 * The first option is in the official [FoundryVTT discord](https://discord.gg/foundryvtt). The friendly folks in #module-discussion and #module-troubleshooting can help with lots of questions.
-* You can also put in an issue on the [GitHub](https://github.com/vigoren/foundryvtt-simple-calendar) for the project and I will help you out!
+* You can also put in an issue on the [GitHub](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar) for the project and I will help you out!
 
 If you wish to support the development of Simple Calendar there are a few ways you can help:
 

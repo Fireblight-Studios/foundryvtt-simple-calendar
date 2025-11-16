@@ -10,7 +10,7 @@ Simple Calendar exposes several CSS variables that can be used to change its app
 
 These variables are added to the `.simple-calendar.{theme}` classes. Example for the dark theme would be `.simple-calendar.dark` class will have the CSS variables. These classes are added by default to each Foundry VTT application to ensure all dialogs look correct.
 
-Check out the [contributing guide](https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/CONTRIBUTING.md#themes) if you want to add your own theme to Simple Calendar for everyone to use!
+Check out the [contributing guide](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/blob/main/CONTRIBUTING.md#themes) if you want to add your own theme to Simple Calendar for everyone to use!
 
 Below is the list of all available CSS variables and what they target:
 

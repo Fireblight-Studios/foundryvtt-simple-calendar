@@ -1,6 +1,6 @@
 {
 	"FSC.Notes.Empty": "Tälle päivämäärälle ei ole merkintöjä",
-	"FSC.Migration.v1v2.Help": "Tervetuloa Simple Calendarin versioon 2!<br/><br/>Täydellinen luettelo parannuksista löytyy <a href='https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/CHANGELOG.md'>muutoslokista</a>!<br/><br/>Osa parannuksista vaati muutoksia siihen, miten Simple Calendar tallentaa tietoja. Älä huoli, sillä Simple Calendar on jo valmiina siirtämään tietosi uuteen muotoon!",
+	"FSC.Migration.v1v2.Help": "Tervetuloa Simple Calendarin versioon 2!<br/><br/>Täydellinen luettelo parannuksista löytyy <a href='https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/blob/main/CHANGELOG.md'>muutoslokista</a>!<br/><br/>Osa parannuksista vaati muutoksia siihen, miten Simple Calendar tallentaa tietoja. Älä huoli, sillä Simple Calendar on jo valmiina siirtämään tietosi uuteen muotoon!",
 	"FSC.DateFormat.Day.NumberPadded": "Päivien numero nollalla täydennettynä.",
 	"FSC.Date.Tuesday": "Tiistai",
 	"FSC.Configuration.Client.Title": "Käyttäjän asetukset",

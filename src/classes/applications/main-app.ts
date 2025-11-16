@@ -102,7 +102,7 @@ export default class MainApp extends FormApplication {
      */
     static get defaultOptions() {
         const options = super.defaultOptions;
-        options.template = "modules/foundryvtt-simple-calendar/templates/main.html";
+        options.template = "modules/foundryvtt-simple-calendar-reborn/templates/main.html";
         options.title = "FSC.Title";
         options.classes = ["simple-calendar"];
         options.id = this.appWindowId;

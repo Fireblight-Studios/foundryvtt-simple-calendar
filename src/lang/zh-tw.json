@@ -102,7 +102,7 @@
 	"FSC.Moon.Phase.WaningCrescent": "漸暗蛾蝞月",
 	"FSC.Configuration.Title": "日曆設定",
 	"FSC.Configuration.Description": "透過此設定，你可以為你的遊戲日曆設定當今年份，多少個月，每月的名稱以及每月多少天。",
-	"FSC.Configuration.Help": "需要設定日曆協助的話，請前往閱讀 <a href='https://github.com/vigoren/foundryvtt-simple-calendar/tree/main/docs/Configuration.md' target='_blank'>文檔!</a>",
+	"FSC.Configuration.Help": "需要設定日曆協助的話，請前往閱讀 <a href='https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/tree/main/docs/Configuration.md' target='_blank'>文檔!</a>",
 	"FSC.Configuration.Save": "儲存設定",
 	"FSC.Configuration.General.Title": "一般設定",
 	"FSC.Configuration.General.PreDefined": "預設日曆",

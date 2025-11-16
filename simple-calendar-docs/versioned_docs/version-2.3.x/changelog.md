@@ -8,7 +8,7 @@
 ### Bug Fixes
 
 - Fixed a bug when the [Sync Date/Time Changes Across Calendars](https://simplecalendar.info/docs/global-configuration/settings#sync-datetime-changes-across-calendars) setting is enabled and multiple calendars are configured that would cause all calendars to emit the [DateTimeChange](https://simplecalendar.info/docs/developing-with-sc/api/namespaces/SimpleCalendar.Hooks#datetimechange) hook instead of just the active calendar.
-- Fixed a bug in the Pathfinder 1e system where every turn in a combat would advance the calendars time instead of just advancing the time at the end of the round. ([#528](https://github.com/vigoren/foundryvtt-simple-calendar/issues/528))
+- Fixed a bug in the Pathfinder 1e system where every turn in a combat would advance the calendars time instead of just advancing the time at the end of the round. ([#528](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/528))
 - Fixed a rare issue where calling the `SimpleCalendar.api.showCalendar` API function with an invalid day set could cause the calendar to display incorrectly.
 - Fixed a very rare issue when comparing 2 dates the months could be considered the same when they shouldn't.
 
@@ -21,9 +21,9 @@
 
 ### Bug Fixes
 
-- Fixed a bug in Foundry v11 where when typing the compact view would pop above all other windows. ([#525](https://github.com/vigoren/foundryvtt-simple-calendar/issues/525))
-- Fixed a bug in Foundry v11 where side panels would close when interacting with the calendar. ([#526](https://github.com/vigoren/foundryvtt-simple-calendar/issues/526))
-- Fixed an issue where side panels would sometimes get stuck open. ([#472](https://github.com/vigoren/foundryvtt-simple-calendar/issues/472))
+- Fixed a bug in Foundry v11 where when typing the compact view would pop above all other windows. ([#525](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/525))
+- Fixed a bug in Foundry v11 where side panels would close when interacting with the calendar. ([#526](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/526))
+- Fixed an issue where side panels would sometimes get stuck open. ([#472](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/472))
 
 ### Translation Updates
 
@@ -40,11 +40,11 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 
 ### Bug Fixes
 
-- Fixed an issue loading images related to system specific themes on The Forge. ([#517](https://github.com/vigoren/foundryvtt-simple-calendar/issues/517))
+- Fixed an issue loading images related to system specific themes on The Forge. ([#517](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/517))
 - Fixed a few issues with the classic theme when used in the Warhammer Fantasy Roleplay 4th Edition System.
 - Fixed an issue loading images related to system specific themes when a `routePrefix` is set for FoundryVTT.
 - Fixed an issue displaying the Compact View Date/Time Control Layout images in the configuration when a `routePrefix` is set for FoundryVTT.
-- Fixed an issue with the Compact Display where very long date text would wrap. ([#518](https://github.com/vigoren/foundryvtt-simple-calendar/issues/518))
+- Fixed an issue with the Compact Display where very long date text would wrap. ([#518](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/518))
 - Fixed an alignment issue in the Compact Display with the date control buttons when the date text was wider than the buttons.
 - Fixed a visual bug when importing from a configuration with notes. Each note would be counted twice until the page was refreshed.
 
@@ -57,12 +57,12 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 
 ### Bug Fixes
 
-- Fixed a bug where certain chat messages would appear twice if the [Use Game Time For Chat Message Timestamps](https://simplecalendar.info/docs/global-configuration/settings#use-game-time-for-chat-message-timestamps) setting is enabled. ([#515](https://github.com/vigoren/foundryvtt-simple-calendar/issues/515))
-- Fixed a bug where the game time would not be included when the chat log was exported. ([514](https://github.com/vigoren/foundryvtt-simple-calendar/issues/514))
+- Fixed a bug where certain chat messages would appear twice if the [Use Game Time For Chat Message Timestamps](https://simplecalendar.info/docs/global-configuration/settings#use-game-time-for-chat-message-timestamps) setting is enabled. ([#515](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/515))
+- Fixed a bug where the game time would not be included when the chat log was exported. ([514](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/514))
 - Fixed a bug when players saved their client settings through Simple Calendars configuration dialog the date of the calendar would change to a year of 0.
-- Fixed an error that would get logged in certain circumstances when using the configuration dialog. ([424](https://github.com/vigoren/foundryvtt-simple-calendar/issues/424))
-- Fixed a bug when importing from an invalid source that could result in a calendar with 0 months. ([502](https://github.com/vigoren/foundryvtt-simple-calendar/issues/502))
-- Fixed an issue where occasionally notes would not open. ([468](https://github.com/vigoren/foundryvtt-simple-calendar/issues/468))
+- Fixed an error that would get logged in certain circumstances when using the configuration dialog. ([424](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/424))
+- Fixed a bug when importing from an invalid source that could result in a calendar with 0 months. ([502](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/502))
+- Fixed an issue where occasionally notes would not open. ([468](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/468))
 
 ### Translation Updates
 
@@ -86,7 +86,7 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 
 ### Chat Message Timestamps
 
-Simple Calendar can now be configured to change chat message timestamps from using the real life timestamps to using the date and time from SC (in game timestamps). ([#490](https://github.com/vigoren/foundryvtt-simple-calendar/issues/490))
+Simple Calendar can now be configured to change chat message timestamps from using the real life timestamps to using the date and time from SC (in game timestamps). ([#490](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/490))
 
 **IMPORTANT:** Only chat messages created after this version of SC is installed will show timestamps using in game timestamps. Chat messages created before do not contain the required metadata for displaying the in game time they were created.
 
@@ -95,14 +95,14 @@ Simple Calendar can now be configured to change chat message timestamps from usi
 
 ### Quality of Life Updates
 
-- Added a keybinding to toggle if the calendar is visible or hidden. The binding can be edited to any key but by default uses the `Z` key. ([#478](https://github.com/vigoren/foundryvtt-simple-calendar/issues/478))
-- Added an option when editing a note to set if you want to be reminded of the note. ([#484](https://github.com/vigoren/foundryvtt-simple-calendar/issues/484))
+- Added a keybinding to toggle if the calendar is visible or hidden. The binding can be edited to any key but by default uses the `Z` key. ([#478](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/478))
+- Added an option when editing a note to set if you want to be reminded of the note. ([#484](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/484))
 
 ### Bug Fixes
 
-- Fixed a bug when using the compact view and using the Quick Increment layout where hitting the `Shift` or `Control` keys would cause the entire compact view to change widths. ([#499](https://github.com/vigoren/foundryvtt-simple-calendar/issues/499))
+- Fixed a bug when using the compact view and using the Quick Increment layout where hitting the `Shift` or `Control` keys would cause the entire compact view to change widths. ([#499](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/499))
 - Fixed a bug where the calendar would not always remember the last position it was moved to.
-- Improved how custom themes look when system specific images fail to load. ([#503](https://github.com/vigoren/foundryvtt-simple-calendar/issues/503))
+- Improved how custom themes look when system specific images fail to load. ([#503](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/503))
 
 ### Translation Updates
 
@@ -431,7 +431,7 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 
 - Added a link to the GitHub page for the module in the header of the documentation site.
 - Added documentation for [customizing the themes](https://simplecalendar.info/developing-with-sc/index/theming.html) of Simple Calendar.
-- Added documentation for [contributing](https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/CONTRIBUTING.md#themes) a new theme to Simple Calendar.
+- Added documentation for [contributing](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/blob/main/CONTRIBUTING.md#themes) a new theme to Simple Calendar.
 - Added documentation that outlines all the [available themes](https://simplecalendar.info/pages/docs/using-sc/index/themes.html) within Simple Calendar.
 - Updated the [client settings](https://simplecalendar.info/pages/global-configuration/index/settings.html#client-settings) documentation to include the new settings `Remember Compact Position` and `Side Drawer Open Direction`.
 - Fixed some typos in the example of the [setDate API function](https://simplecalendar.info/functions/SimpleCalendar.api.setDate.html)

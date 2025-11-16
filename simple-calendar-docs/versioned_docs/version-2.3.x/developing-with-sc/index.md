@@ -30,7 +30,7 @@ Once the module is installed to access the type definitions in your project you 
 ```json
 {
   "compilerOptions": {
-    "types": ["foundryvtt-simple-calendar"]
+    "types": ["foundryvtt-simple-calendar-reborn"]
   }
 }
 ```

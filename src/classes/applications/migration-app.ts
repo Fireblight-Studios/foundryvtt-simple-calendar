@@ -35,7 +35,7 @@ export default class MigrationApp extends Application {
      */
     static get defaultOptions() {
         const options = super.defaultOptions;
-        options.template = "modules/foundryvtt-simple-calendar/templates/migration.html";
+        options.template = "modules/foundryvtt-simple-calendar-reborn/templates/migration.html";
         options.title = "FSC.Migration.Title";
         options.classes = ["simple-calendar"];
         options.id = this.appWindowId;

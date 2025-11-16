@@ -1011,12 +1011,12 @@ describe("Configuration App Class Tests", () => {
             ],
             notes: {
                 a: [
-                    { flags: { "foundryvtt-simple-calendar": { noteData: { calendarId: "a" } } } },
-                    { flags: { "foundryvtt-simple-calendar": { noteData: { calendarId: "a" } } } }
+                    { flags: { "foundryvtt-simple-calendar-reborn": { noteData: { calendarId: "a" } } } },
+                    { flags: { "foundryvtt-simple-calendar-reborn": { noteData: { calendarId: "a" } } } }
                 ],
                 b: [
-                    { flags: { "foundryvtt-simple-calendar": { noteData: { calendarId: "b" } } } },
-                    { flags: { "foundryvtt-simple-calendar": { noteData: { calendarId: "b" } } } }
+                    { flags: { "foundryvtt-simple-calendar-reborn": { noteData: { calendarId: "b" } } } },
+                    { flags: { "foundryvtt-simple-calendar-reborn": { noteData: { calendarId: "b" } } } }
                 ]
             }
         };

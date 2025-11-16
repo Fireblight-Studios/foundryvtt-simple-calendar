@@ -27,7 +27,7 @@ export class NoteSheet extends JournalSheet {
     private journalData = {
         _id: "",
         name: "",
-        flags: <{ "foundryvtt-simple-calendar": { noteData: SimpleCalendar.NoteData }} >{},
+        flags: <{ "foundryvtt-simple-calendar-reborn": { noteData: SimpleCalendar.NoteData }} >{},
         ownership: <Record<string, CONST.DOCUMENT_OWNERSHIP_LEVELS>>{}
     };
 

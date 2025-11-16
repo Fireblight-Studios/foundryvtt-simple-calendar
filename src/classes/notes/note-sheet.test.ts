@@ -58,7 +58,7 @@ describe("Note Sheet Class Tests", () => {
         je = {
             data: {
                 flags: {
-                    "foundryvtt-simple-calendar": {}
+                    "foundryvtt-simple-calendar-reborn": {}
                 }
             },
             name: "Journal",
@@ -200,7 +200,7 @@ describe("Note Sheet Class Tests", () => {
         nd.endDate.day = 1;
         nd.categories.push("asd");
         //@ts-ignore
-        ns.journalData.flags["foundryvtt-simple-calendar"] = { noteData: { repeats: 0, macro: "none", remindUsers: [], categories: ["Holiday"] } };
+        ns.journalData.flags["foundryvtt-simple-calendar-reborn"] = { noteData: { repeats: 0, macro: "none", remindUsers: [], categories: ["Holiday"] } };
         jest.spyOn(NManager, "getNoteStub")
             //@ts-ignore
             .mockReturnValueOnce({ title: "Journal", noteData: null, ownership: {} })
@@ -232,7 +232,7 @@ describe("Note Sheet Class Tests", () => {
         //@ts-ignore
         ns.journalData.flags = {
             //@ts-ignore
-            "foundryvtt-simple-calendar": { noteData: { repeats: 0, macro: "none", remindUsers: [], categories: ["Holiday"] } }
+            "foundryvtt-simple-calendar-reborn": { noteData: { repeats: 0, macro: "none", remindUsers: [], categories: ["Holiday"] } }
         };
         expect(await ns.getData()).toBeDefined();
         //Image page
@@ -241,7 +241,7 @@ describe("Note Sheet Class Tests", () => {
         //@ts-ignore
         ns.journalData.ownership = { "": 3, a: 0, default: 0 };
         //@ts-ignore
-        ns.journalData.flags = { "foundryvtt-simple-calendar": { noteData: { repeats: 0, macro: "none", remindUsers: [], categories: [] } } };
+        ns.journalData.flags = { "foundryvtt-simple-calendar-reborn": { noteData: { repeats: 0, macro: "none", remindUsers: [], categories: [] } } };
         expect(await ns.getData()).toBeDefined();
         //PDF page
         je.pages.contents[0].type = "pdf";
@@ -249,7 +249,7 @@ describe("Note Sheet Class Tests", () => {
         //@ts-ignore
         ns.journalData.ownership = { "": 3, a: 0, default: 0 };
         //@ts-ignore
-        ns.journalData.flags = { "foundryvtt-simple-calendar": { noteData: { repeats: 0, macro: "none", remindUsers: [], categories: [] } } };
+        ns.journalData.flags = { "foundryvtt-simple-calendar-reborn": { noteData: { repeats: 0, macro: "none", remindUsers: [], categories: [] } } };
         expect(await ns.getData()).toBeDefined();
         //Video page
         je.pages.contents[0].type = "video";
@@ -257,7 +257,7 @@ describe("Note Sheet Class Tests", () => {
         //@ts-ignore
         ns.journalData.ownership = { "": 3, a: 0, default: 0 };
         //@ts-ignore
-        ns.journalData.flags = { "foundryvtt-simple-calendar": { noteData: { repeats: 0, macro: "", remindUsers: [], categories: [] } } };
+        ns.journalData.flags = { "foundryvtt-simple-calendar-reborn": { noteData: { repeats: 0, macro: "", remindUsers: [], categories: [] } } };
         expect(await ns.getData()).toBeDefined();
 
         //@ts-ignore
@@ -570,14 +570,14 @@ describe("Note Sheet Class Tests", () => {
 
     test("MultiSelect Option Change", () => {
         //@ts-ignore
-        ns.journalData.flags["foundryvtt-simple-calendar"] = { noteData: { categories: [] } };
+        ns.journalData.flags["foundryvtt-simple-calendar-reborn"] = { noteData: { categories: [] } };
         ns.multiSelectOptionChange("scNoteCategories_undefined", "Holiday", true);
         //@ts-ignore
-        expect(ns.journalData.flags["foundryvtt-simple-calendar"].noteData.categories.indexOf("Holiday") > -1).toBe(true);
+        expect(ns.journalData.flags["foundryvtt-simple-calendar-reborn"].noteData.categories.indexOf("Holiday") > -1).toBe(true);
 
         ns.multiSelectOptionChange("scNoteCategories_undefined", "Holiday", false);
         //@ts-ignore
-        expect(ns.journalData.flags["foundryvtt-simple-calendar"].noteData.categories.indexOf("Holiday") > -1).toBe(false);
+        expect(ns.journalData.flags["foundryvtt-simple-calendar-reborn"].noteData.categories.indexOf("Holiday") > -1).toBe(false);
 
         ns.multiSelectOptionChange("scUserPermissions_undefined", "123", true);
         //@ts-ignore

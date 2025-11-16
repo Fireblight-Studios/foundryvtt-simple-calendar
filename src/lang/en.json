@@ -90,7 +90,7 @@
 	"FSC.QuickIncrement": "Quick Increment",
 	"FSC.Migration.Title": "Migration",
 	"FSC.Migration.v1v2.Title": "Migration From Simple Calendar v1 to v2",
-	"FSC.Migration.v1v2.Help": "Welcome to Simple Calendar version 2!<br/><br/>For the full list of improvements check out the <a href='https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/CHANGELOG.md'>change log</a>!<br/><br/>Part of the improvements required changes to how Simple Calendar stores data, but don't worry Simple Calendar is all ready moving your data over to the new format!",
+	"FSC.Migration.v1v2.Help": "Welcome to Simple Calendar version 2!<br/><br/>For the full list of improvements check out the <a href='https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/blob/main/CHANGELOG.md'>change log</a>!<br/><br/>Part of the improvements required changes to how Simple Calendar stores data, but don't worry Simple Calendar is all ready moving your data over to the new format!",
 	"FSC.Migration.v1v2.Calendar": "Migrating calendar data to the new version!",
 	"FSC.Migration.v1v2.GlobalConfiguration": "Migrating global configuration data to the new version!",
 	"FSC.Migration.v1v2.Notes": "Migrating notes to Journal Entries!",

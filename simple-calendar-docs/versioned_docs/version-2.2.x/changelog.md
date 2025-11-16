@@ -308,7 +308,7 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 
 - Added a link to the GitHub page for the module in the header of the documentation site.
 - Added documentation for [customizing the themes](https://simplecalendar.info/developing-with-sc/index/theming.html) of Simple Calendar.
-- Added documentation for [contributing](https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/CONTRIBUTING.md#themes) a new theme to Simple Calendar.
+- Added documentation for [contributing](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/blob/main/CONTRIBUTING.md#themes) a new theme to Simple Calendar.
 - Added documentation that outlines all the [available themes](https://simplecalendar.info/pages/docs/using-sc/index/themes.html) within Simple Calendar.
 - Updated the [client settings](https://simplecalendar.info/pages/global-configuration/index/settings.html#client-settings) documentation to include the new settings `Remember Compact Position` and `Side Drawer Open Direction`.
 - Fixed some typos in the example of the [setDate API function](https://simplecalendar.info/functions/SimpleCalendar.api.setDate.html)

@@ -90,7 +90,7 @@
 	"FSC.QuickIncrement": "Incremento Rápido",
 	"FSC.Migration.Title": "Migração",
 	"FSC.Migration.v1v2.Title": "Migração do Simple Calendar v1 para v2",
-	"FSC.Migration.v1v2.Help": "Bem-vindo ao Simple Calendar versão 2!<br/><br/>Para a lista completa de melhorias, confira o <a href='https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/CHANGELOG.md'>change log</a>!<br/><br/>Parte das melhorias exigiram mudanças na forma como o Simple Calendar armazena dados, mas não se preocupe, o Simple Calendar está pronto para mover seus dados para o novo formato!",
+	"FSC.Migration.v1v2.Help": "Bem-vindo ao Simple Calendar versão 2!<br/><br/>Para a lista completa de melhorias, confira o <a href='https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/blob/main/CHANGELOG.md'>change log</a>!<br/><br/>Parte das melhorias exigiram mudanças na forma como o Simple Calendar armazena dados, mas não se preocupe, o Simple Calendar está pronto para mover seus dados para o novo formato!",
 	"FSC.Migration.v1v2.Calendar": "Migrando dados do calendário para a nova versão!",
 	"FSC.Migration.v1v2.GlobalConfiguration": "Migrando dados de configuração global para a nova versão!",
 	"FSC.Migration.v1v2.Notes": "Migrando notas de Diário!",

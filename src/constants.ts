@@ -2,7 +2,7 @@
  * The name of this module
  * @internal
  */
-export const ModuleName = "foundryvtt-simple-calendar";
+export const ModuleName = "foundryvtt-simple-calendar-reborn";
 
 /**
  * The name of the module specific socket

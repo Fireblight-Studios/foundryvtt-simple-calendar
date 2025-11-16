@@ -252,7 +252,7 @@ export default function Home() {
                           <div className={styles.helpItem}>
                               <Github />
                               <h3>Github</h3>
-                              <p>You can also put in an issue on the <a href="https://github.com/vigoren/foundryvtt-simple-calendar">GitHub</a> for the project and I will help you out!</p>
+                              <p>You can also put in an issue on the <a href="https://github.com/Fireblight-Studios/foundryvtt-simple-calendar">GitHub</a> for the project and I will help you out!</p>
                           </div>
                       </div>
                       <div className="col col--1"></div>

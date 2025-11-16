@@ -391,7 +391,7 @@
 	"FSC.Migration.v1v2.CleanupSuccess": "Stare dane Simple Calendar zostały pomyślnie usunięte!",
 	"FSC.Migration.v1v2.Complete": "Migracja została ukończona!",
 	"FSC.Migration.v1v2.GlobalConfiguration": "Migrowanie danych globalnych ustawień do nowej wersji!",
-	"FSC.Migration.v1v2.Help": "Witamy w Simple Calendar wersja 2!<br/><br/>Pełną listę poprawek znajdziesz na <a href='https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/CHANGELOG.md'>liście zmian</a>!<br/><br/>Część poprawek wymaga zmian w sposobie w który Simple Calendar przechowuje dane, ale nie bój się modół już pracuje nad przenoszeniem danych do nowego formatu!",
+	"FSC.Migration.v1v2.Help": "Witamy w Simple Calendar wersja 2!<br/><br/>Pełną listę poprawek znajdziesz na <a href='https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/blob/main/CHANGELOG.md'>liście zmian</a>!<br/><br/>Część poprawek wymaga zmian w sposobie w który Simple Calendar przechowuje dane, ale nie bój się modół już pracuje nad przenoszeniem danych do nowego formatu!",
 	"FSC.Migration.v1v2.Notes": "Migrowanie notatek do Wpisów w Dzienniku!",
 	"FSC.Migration.v1v2.Title": "Migrowanie z Simple calendar v1 do v2",
 	"FSC.Minute": "Minuta",

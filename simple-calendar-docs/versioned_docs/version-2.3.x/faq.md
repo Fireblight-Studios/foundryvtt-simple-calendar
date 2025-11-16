@@ -6,7 +6,7 @@ Below are a few common issues and questions!
 
 The most common cause of this issue is due to the module not having updated past version 1.3.75. If your Simple Calendar version is on 1.3.75 please follow the steps in this [FAQ](#unable-to-update-to-the-latest-version--stuck-on-version-1375).
 
-If you are on a version newer than 1.3.75 and still can not update the configuration or notes please [submit an issue on GitHub](https://github.com/vigoren/foundryvtt-simple-calendar/issues).
+If you are on a version newer than 1.3.75 and still can not update the configuration or notes please [submit an issue on GitHub](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues).
 
 <hr/>
 

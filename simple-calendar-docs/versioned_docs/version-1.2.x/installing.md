@@ -8,7 +8,7 @@ Foundry has a built-in directory of modules that you can install. The easiest wa
 
 ## module.json
 
-Through the same built-in module installer in foundry, you can specify the link of the module to install instead of searching the directory. To install using the module json file, use this link [https://github.com/vigoren/foundryvtt-simple-calendar/releases/latest/download/module.json](https://github.com/vigoren/foundryvtt-simple-calendar/releases/latest/download/module.json)
+Through the same built-in module installer in foundry, you can specify the link of the module to install instead of searching the directory. To install using the module json file, use this link [https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/releases/latest/download/module.json](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/releases/latest/download/module.json)
 
 ## Zip File
 

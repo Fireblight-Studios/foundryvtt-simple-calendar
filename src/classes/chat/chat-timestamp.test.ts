@@ -57,13 +57,13 @@ describe("Chat Timestamp Tests", () => {
         ChatTimestamp.addGameTimeToMessage(cm);
 
         expect(cm.updateSource).toHaveBeenCalledTimes(1);
-        expect(cm.flags["foundryvtt-simple-calendar"]["sc-timestamps"]).toEqual({ id: "a", timestamp: tCal.toSeconds() });
+        expect(cm.flags["foundryvtt-simple-calendar-reborn"]["sc-timestamps"]).toEqual({ id: "a", timestamp: tCal.toSeconds() });
 
         //@ts-ignore
         game.system.id = "D35E";
         //@ts-ignore
         ChatTimestamp.addGameTimeToMessage(cm);
-        expect(cm._source.flags["foundryvtt-simple-calendar"]["sc-timestamps"]).toEqual({ id: "a", timestamp: tCal.toSeconds() });
+        expect(cm._source.flags["foundryvtt-simple-calendar-reborn"]["sc-timestamps"]).toEqual({ id: "a", timestamp: tCal.toSeconds() });
     });
 
     test("Get Formatted Chat Timestamp", () => {

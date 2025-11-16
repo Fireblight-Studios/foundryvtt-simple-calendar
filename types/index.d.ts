@@ -2578,56 +2578,56 @@ declare global {
 
     interface FlagConfig {
         JournalEntry: {
-            "foundryvtt-simple-calendar": {
+            "foundryvtt-simple-calendar-reborn": {
                 noteData?: SimpleCalendar.NoteData;
             }
         };
         Folder: {
-            "foundryvtt-simple-calendar": {
+            "foundryvtt-simple-calendar-reborn": {
                 root?: boolean;
             }
         };
         ChatMessage: {
-            "foundryvtt-simple-calendar": {
+            "foundryvtt-simple-calendar-reborn": {
                 "sc-timestamps"?: { id: string; timestamp: number }; 
             }
         }
     }
 
     interface SettingConfig {
-        [key: `foundryvtt-simple-calendar.${string}.theme`]: string;
-        "foundryvtt-simple-calendar.theme": string;
-        "foundryvtt-simple-calendar.open-on-load": boolean;
-        "foundryvtt-simple-calendar.open-compact": boolean;
-        "foundryvtt-simple-calendar.remember-position": boolean;
-        "foundryvtt-simple-calendar.remember-compact-position": boolean;
-        "foundryvtt-simple-calendar.app-position": Record<string, unknown>;
-        "foundryvtt-simple-calendar.app-compact-position": Record<string, unknown>;
-        "foundryvtt-simple-calendar.note-reminder-notification": string;
-        "foundryvtt-simple-calendar.note-list-open-direction": string;
-        "foundryvtt-simple-calendar.always-show-note-list": boolean;
-        "foundryvtt-simple-calendar.persistent-open": boolean;
+        [key: `foundryvtt-simple-calendar-reborn.${string}.theme`]: string;
+        "foundryvtt-simple-calendar-reborn.theme": string;
+        "foundryvtt-simple-calendar-reborn.open-on-load": boolean;
+        "foundryvtt-simple-calendar-reborn.open-compact": boolean;
+        "foundryvtt-simple-calendar-reborn.remember-position": boolean;
+        "foundryvtt-simple-calendar-reborn.remember-compact-position": boolean;
+        "foundryvtt-simple-calendar-reborn.app-position": Record<string, unknown>;
+        "foundryvtt-simple-calendar-reborn.app-compact-position": Record<string, unknown>;
+        "foundryvtt-simple-calendar-reborn.note-reminder-notification": string;
+        "foundryvtt-simple-calendar-reborn.note-list-open-direction": string;
+        "foundryvtt-simple-calendar-reborn.always-show-note-list": boolean;
+        "foundryvtt-simple-calendar-reborn.persistent-open": boolean;
 
-        "foundryvtt-simple-calendar.compact-view-scale": number;
-        "foundryvtt-simple-calendar.calendar-main-app": unknown;
-        "foundryvtt-simple-calendar.calendar-configuration-menu": unknown;
-        "foundryvtt-simple-calendar.calendar-configuration": unknown[];
-        "foundryvtt-simple-calendar.active-calendar": string;
-        "foundryvtt-simple-calendar.global-configuration": Record<string, unknown>;
+        "foundryvtt-simple-calendar-reborn.compact-view-scale": number;
+        "foundryvtt-simple-calendar-reborn.calendar-main-app": unknown;
+        "foundryvtt-simple-calendar-reborn.calendar-configuration-menu": unknown;
+        "foundryvtt-simple-calendar-reborn.calendar-configuration": unknown[];
+        "foundryvtt-simple-calendar-reborn.active-calendar": string;
+        "foundryvtt-simple-calendar-reborn.global-configuration": Record<string, unknown>;
 
-        "foundryvtt-simple-calendar.year-config": Record<string, unknown>;
-        "foundryvtt-simple-calendar.weekday-config": unknown[];
-        "foundryvtt-simple-calendar.month-config": unknown[];
-        "foundryvtt-simple-calendar.current-date": Record<string, unknown>;
-        "foundryvtt-simple-calendar.notes": unknown[];
-        "foundryvtt-simple-calendar.allow-players-add-notes": unknown;
-        "foundryvtt-simple-calendar.default-note-visibility": boolean;
-        "foundryvtt-simple-calendar.leap-year-rule": Record<string, unknown>;
-        "foundryvtt-simple-calendar.time-configuration": Record<string, unknown>;
-        "foundryvtt-simple-calendar.general-configuration": Record<string, unknown>;
-        "foundryvtt-simple-calendar.season-configuration": unknown[];
-        "foundryvtt-simple-calendar.moon-configuration": unknown[];
-        "foundryvtt-simple-calendar.note-categories": unknown[];
+        "foundryvtt-simple-calendar-reborn.year-config": Record<string, unknown>;
+        "foundryvtt-simple-calendar-reborn.weekday-config": unknown[];
+        "foundryvtt-simple-calendar-reborn.month-config": unknown[];
+        "foundryvtt-simple-calendar-reborn.current-date": Record<string, unknown>;
+        "foundryvtt-simple-calendar-reborn.notes": unknown[];
+        "foundryvtt-simple-calendar-reborn.allow-players-add-notes": unknown;
+        "foundryvtt-simple-calendar-reborn.default-note-visibility": boolean;
+        "foundryvtt-simple-calendar-reborn.leap-year-rule": Record<string, unknown>;
+        "foundryvtt-simple-calendar-reborn.time-configuration": Record<string, unknown>;
+        "foundryvtt-simple-calendar-reborn.general-configuration": Record<string, unknown>;
+        "foundryvtt-simple-calendar-reborn.season-configuration": unknown[];
+        "foundryvtt-simple-calendar-reborn.moon-configuration": unknown[];
+        "foundryvtt-simple-calendar-reborn.note-categories": unknown[];
     }
 }
 

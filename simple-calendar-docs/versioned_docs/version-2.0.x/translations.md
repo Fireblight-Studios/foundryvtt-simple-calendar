@@ -13,4 +13,4 @@ Simple Calendar is available in these languages thanks to the following people:
 | French (fr)               | [JDR Ninja](https://github.com/JDR-Ninja) <br/> [TheBird956](https://github.com/TheBird956)                                                                                |
 | Italian (it)              | [Haloghen](https://github.com/Haloghen)                                                                                                                                    |
 
-If your preferred language is missing or is incomplete then check out the [contributing](https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/CONTRIBUTING.md) guide for how to add it to this project!
+If your preferred language is missing or is incomplete then check out the [contributing](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/blob/main/CONTRIBUTING.md) guide for how to add it to this project!
