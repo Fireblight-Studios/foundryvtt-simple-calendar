@@ -1,25 +1,30 @@
 {
-	"id": "foundryvtt-simple-calendar",
+	"id": "foundryvtt-simple-calendar-reborn",
 	"title": "Simple Calendar",
-	"description": "A simple calendar module for keeping track of game days and events.",
-	"version": "2.4.18.5",
+	"description": "A simple calendar module for keeping track of game days and events. Forked from the original Simple Calendar by Vigoren.",
+	"version": "2.5.0.0",
 	"authors": [
-		{
-			"name": "Dean Vigoren (Vigorator)",
-			"url": "https://vig.vg",
-			"discord": "vigorator",
-			"patreon": "vigorator",
-			"ko-fi": "vigorator"
-		}
+      {
+        "name": "Arctis Fireblight",
+        "discord": "arctis_fireblight",
+        "github": "arctis-fireblight"
+      },
+      {
+        "name": "Dean Vigoren (Vigorator)",
+        "url": "https://vig.vg",
+        "discord": "vigorator",
+        "patreon": "vigorator",
+        "ko-fi": "vigorator"
+      }
 	],
 	"compatibility": {
 		"minimum": "13",
 		"verified": "13"
 	},
-	"url": "https://github.com/vigoren/foundryvtt-simple-calendar",
-	"bugs": "https://github.com/vigoren/foundryvtt-simple-calendar/issues",
-	"readme": "https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/README.md",
-	"license": "https://github.com/vigoren/foundryvtt-simple-calendar/blob/main/LICENSE",
+	"url": "https://github.com/Fireblight-Studios/foundryvtt-simple-calendar",
+	"bugs": "https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues",
+	"readme": "https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/blob/main/README.md",
+	"license": "https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/blob/main/LICENSE",
 	"manifest": "#{MANIFEST}#",
 	"download": "#{DOWNLOAD}#",
 	"esmodules": [
@@ -109,23 +114,23 @@
 		},
 		{
 			"type": "cover",
-			"url": "https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/src/assets/setup-cover.png"
+			"url": "https://raw.githubusercontent.com/Fireblight-Studios/foundryvtt-simple-calendar/main/src/assets/setup-cover.png"
 		},
 		{
 			"type": "screenshot",
-			"url": "https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-themes.gif"
+			"url": "https://raw.githubusercontent.com/Fireblight-Studios/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-themes.gif"
 		},
 		{
 			"type": "screenshot",
-			"url": "https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-themes-comp.gif"
+			"url": "https://raw.githubusercontent.com/Fireblight-Studios/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-themes-comp.gif"
 		},
 		{
 			"type": "screenshot",
-			"url": "https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-theme-dark-config.png"
+			"url": "https://raw.githubusercontent.com/Fireblight-Studios/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-theme-dark-config.png"
 		},
 		{
 			"type": "screenshot",
-			"url": "https://raw.githubusercontent.com/vigoren/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-theme-dark-note.png"
+			"url": "https://raw.githubusercontent.com/Fireblight-Studios/foundryvtt-simple-calendar/main/simple-calendar-docs/docs/images/sc-v2-theme-dark-note.png"
 		}
 	],
 	"flags": {
