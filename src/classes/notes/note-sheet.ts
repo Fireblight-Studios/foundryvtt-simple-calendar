@@ -126,7 +126,7 @@ export class NoteSheet extends JournalSheet {
 
     static get defaultOptions() {
         const options = super.defaultOptions;
-        options.template = "modules/foundryvtt-simple-calendar/templates/note-sheet.html";
+        options.template = "modules/foundryvtt-simple-calendar-reborn/templates/note-sheet.html";
         options.title = "Simple Calendar Note";
         options.id = this.appWindowId;
         options.classes = ["sheet", "journal-sheet", "simple-calendar"];
