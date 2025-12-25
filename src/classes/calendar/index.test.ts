@@ -499,7 +499,8 @@ describe("Calendar Class Tests", () => {
         const curVisYear = tCal.year.visibleYear;
         tCal.changeMonth(tCal.months.length + 1);
         expect(tCal.months[(d.getMonth() + 2) % tCal.months.length].visible).toBe(true);
-        if (d.getMonth() < 10)
+        var testMonth = d.getMonth();
+        if (d.getMonth() != 10)
             expect(tCal.year.visibleYear).toBe(curVisYear + 1);
         else
             expect(tCal.year.visibleYear).toBe(curVisYear + 2);
@@ -508,7 +509,7 @@ describe("Calendar Class Tests", () => {
         tCal.months[10].visible = true;
         tCal.changeMonth(-1 * tCal.months.length);
         expect(tCal.months[10].visible).toBe(true);
-        if (d.getMonth() < 10)
+        if (d.getMonth() != 10)
             expect(tCal.year.visibleYear).toBe(curVisYear);
         else
             expect(tCal.year.visibleYear).toBe(curVisYear+1);
