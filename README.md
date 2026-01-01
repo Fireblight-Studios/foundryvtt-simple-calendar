@@ -5,12 +5,9 @@
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Fireblight-Studios/foundryvtt-simple-calendar/node.js.yml)
 [![codecov](https://codecov.io/gh/vigoren/foundryvtt-simple-calendar/branch/main/graph/badge.svg?token=43TJ117WP1)](https://codecov.io/gh/vigoren/foundryvtt-simple-calendar)
 [![GitHub release (latest by date)](https://img.shields.io/github/downloads/Fireblight-Studios/foundryvtt-simple-calendar/latest/module.zip)](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/releases/latest)
-[![forge](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%&url=https://forge-vtt.com/api/bazaar/package/foundryvtt-simple-calendar&colorB=3d8b41)](https://forge-vtt.com/bazaar#package=foundryvtt-simple-calendar)
-[![Foundry Hub Endorsements](https://img.shields.io/endpoint?logoColor=white&url=https://www.foundryvtt-hub.com/wp-json/hubapi/v1/package/foundryvtt-simple-calendar/shield/endorsements)](https://www.foundryvtt-hub.com/package/foundryvtt-simple-calendar/)
-[![Foundry Hub Comments](https://img.shields.io/endpoint?logoColor=white&url=https://www.foundryvtt-hub.com/wp-json/hubapi/v1/package/foundryvtt-simple-calendar/shield/comments)](https://www.foundryvtt-hub.com/package/foundryvtt-simple-calendar/)
 
-[![Support me on Patreon](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Fshieldsio-patreon.vercel.app%2Fapi%3Fusername%3Dvigorator%26type%3Dpatrons&style=flat)](https://patreon.com/vigorator)
-[![ko-fi](https://img.shields.io/badge/%20-Support%20me%20on%20Ko--fi-%23FF5E5B?style=flat&logo=ko-fi&logoColor=white)](https://ko-fi.com/A0A546HOX)
+
+[![ko-fi](https://img.shields.io/badge/%20-Support%20me%20on%20Ko--fi-%23FF5E5B?style=flat&logo=ko-fi&logoColor=white)](https://x.com/Arctis_Fire)
 
 
 ![](./src/assets/logo.png)
@@ -115,8 +112,7 @@ Have questions? Ran into a bug? There are a couple of ways you can get help!
 If you wish to support the development of Simple Calendar there are a few ways you can help:
 
 * Share your good experiences with the module with others!
-* Leave an endorsement or comment on [Foundry Hub](https://www.foundryvtt-hub.com/package/foundryvtt-simple-calendar/).
-* If you wish and are able to you can support the developer monetarily by becoming a [Patron](https://www.patreon.com/vigorator) or donating on [Ko-fi](https://ko-fi.com/vigorator). Simple Calendar will always be free to use by anyone, these are just options for those who want to donate to the development.
+* If you wish and are able to you can support the developer monetarily by donating on [Ko-fi](https://x.com/Arctis_Fire). Simple Calendar will always be free to use by anyone, these are just options for those who want to donate to the development.
 
 ## Credits
 
