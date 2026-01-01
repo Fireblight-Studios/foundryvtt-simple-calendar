@@ -7,7 +7,7 @@
 [![GitHub release (latest by date)](https://img.shields.io/github/downloads/Fireblight-Studios/foundryvtt-simple-calendar/latest/module.zip)](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/releases/latest)
 
 
-[![ko-fi](https://img.shields.io/badge/%20-Support%20me%20on%20Ko--fi-%23FF5E5B?style=flat&logo=ko-fi&logoColor=white)](https://x.com/Arctis_Fire)
+[![ko-fi](https://img.shields.io/badge/%20-Support%20me%20on%20Ko--fi-%23FF5E5B?style=flat&logo=ko-fi&logoColor=white)](https://ko-fi.com/arctis_fireblight)
 
 
 ![](./src/assets/logo.png)
@@ -112,7 +112,7 @@ Have questions? Ran into a bug? There are a couple of ways you can get help!
 If you wish to support the development of Simple Calendar there are a few ways you can help:
 
 * Share your good experiences with the module with others!
-* If you wish and are able to you can support the developer monetarily by donating on [Ko-fi](https://x.com/Arctis_Fire). Simple Calendar will always be free to use by anyone, these are just options for those who want to donate to the development.
+* If you wish and are able to you can support the developer monetarily by donating on [Ko-fi](https://ko-fi.com/arctis_fireblight). Simple Calendar will always be free to use by anyone, these are just options for those who want to donate to the development.
 
 ## Credits
 
