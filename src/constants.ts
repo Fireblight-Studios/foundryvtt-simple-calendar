@@ -3,7 +3,11 @@
  * @internal
  */
 export const ModuleName = "foundryvtt-simple-calendar-reborn";
-
+/**
+ * The original name of this module, used for backwards compatibility.
+ * @internal
+ */
+export const LegacyModuleName = "foundryvtt-simple-calendar";
 /**
  * The name of the module specific socket
  * @internal

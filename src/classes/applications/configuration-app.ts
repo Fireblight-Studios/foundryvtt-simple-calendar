@@ -9,6 +9,7 @@ import {
     GameWorldTimeIntegrations,
     Icons,
     LeapYearRules,
+    LegacyModuleName,
     ModuleName,
     MoonYearResetOptions,
     NoteReminderNotificationType,
@@ -1854,13 +1855,31 @@ export default class ConfigurationApp extends FormApplication {
                         const calendarId = (newCalId || importCalendar?.id || calId).replace("_temp", "");
                         for (let n = 0; n < data.notes[calId].length; n++) {
                             const journalEntryData = data.notes[calId][n];
-                            const noteImportedIntoDifferentCalendar = !(journalEntryData.flags[ModuleName].noteData.calendarId === calendarId);
-                            journalEntryData.flags[ModuleName].noteData.calendarId = calendarId;
-                            journalEntryData.folder = NManager.noteDirectory?.id;
-                            if (noteImportedIntoDifferentCalendar || !(<Game>game).journal?.has(journalEntryData._id)) {
-                                await JournalEntry.create(journalEntryData, { keepId: !noteImportedIntoDifferentCalendar });
-                            } else {
-                                (<Game>game).journal?.get(journalEntryData._id)?.update(journalEntryData);
+                            const noteData = journalEntryData.flags[ModuleName]?.noteData || journalEntryData.flags[LegacyModuleName]?.noteData;
+                            if (noteData) {
+                                const noteImportedIntoDifferentCalendar = !(noteData.calendarId === calendarId);
+                                // add logic to determine if this entry came from the original version of SC, and if so, convert it to the new format
+                                const isConverted = !journalEntryData.flags[ModuleName];
+                                const legacyEntryExists = isConverted && (<Game>game).journal?.has(journalEntryData._id);
+                                if (isConverted) {
+                                    journalEntryData.flags[ModuleName] = journalEntryData.flags[LegacyModuleName];
+                                    journalEntryData.flags["core"].sheetClass = ModuleName + ".NoteSheet";
+                                    journalEntryData.flags[LegacyModuleName] = undefined;
+                                }
+
+                                journalEntryData.flags[ModuleName].noteData.calendarId = calendarId;
+                                journalEntryData.folder = NManager.noteDirectory?.id;
+                                if (legacyEntryExists) {
+                                    // Clean up the legacy entry if it exists.
+                                    delete journalEntryData._id;
+                                    await JournalEntry.create(journalEntryData);
+                                } else if (noteImportedIntoDifferentCalendar || !(<Game>game).journal?.has(journalEntryData._id)) {
+                                    // import a note into a new calendar OR create one if it doesn't exist.
+                                    await JournalEntry.create(journalEntryData, { keepId: !noteImportedIntoDifferentCalendar });
+                                } else {
+                                    // update existing journal entry.
+                                    (<Game>game).journal?.get(journalEntryData._id)?.update(journalEntryData);
+                                }
                             }
                         }
                     }
