@@ -1,21 +1,22 @@
 [![Supported Foundry Versions](https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/releases/latest/download/module.json)](https://foundryvtt.com/releases/)
 ![](https://img.shields.io/endpoint?url=https%3A%2F%2Ffoundryshields.com%2Fsystem%3FnameType%3Dfull%26showVersion%3D1%26url%3Dhttps%3A%2F%2Fraw.githubusercontent.com%2Fireblight-Studios%2Ffoundryvtt-simple-calendar%2Fmain%2Fsrc%2Fmodule.json)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/Fireblight-Studios/foundryvtt-simple-calendar)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Fireblight-Studios/foundryvtt-simple-calendar?sort=semver)
 [![license](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/blob/main/LICENSE)
 ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Fireblight-Studios/foundryvtt-simple-calendar/node.js.yml)
 [![codecov](https://codecov.io/gh/vigoren/foundryvtt-simple-calendar/branch/main/graph/badge.svg?token=43TJ117WP1)](https://codecov.io/gh/vigoren/foundryvtt-simple-calendar)
 [![GitHub release (latest by date)](https://img.shields.io/github/downloads/Fireblight-Studios/foundryvtt-simple-calendar/latest/module.zip)](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/releases/latest)
+![Total Downloads](https://img.shields.io/github/downloads/Fireblight-Studios/foundryvtt-simple-calendar/module.zip) 
 
 
 [![ko-fi](https://img.shields.io/badge/%20-Support%20me%20on%20Ko--fi-%23FF5E5B?style=flat&logo=ko-fi&logoColor=white)](https://ko-fi.com/arctis_fireblight)
 
 
 ![](./src/assets/logo.png)
-# Simple Calendar 
+# Simple Calendar Reborn
 
-Simple Calendar is the ultimate timekeeping module for [FoundryVTT](https://foundryvtt.com/) that works with all game systems!
+Simple Calendar Reborn is the ultimate timekeeping module for [FoundryVTT](https://foundryvtt.com/), forked from Simple Calendar, that works with all game systems!
 
-It comes prepackaged with many [preset calendars](https://simplecalendar.info/docs/calendar-configuration/quick-setup#choose-a-predefined-calendar) to get your world up and running quickly. Or if you have a completely custom-built calendering system for your world, Simple Calendar can handle that as well!
+It comes prepackaged with many [preset calendars](https://simplecalendar.info/docs/calendar-configuration/quick-setup#choose-a-predefined-calendar) to get your world up and running quickly. Or if you have a completely custom-built calendering system for your world, Simple Calendar Reborn can handle that as well!
 
 Get started and create the perfect calendar to enrich your world for your players!
 
@@ -94,6 +95,10 @@ Through the same built-in module installer in foundry, you can specify the link 
 To install the most recent version of the module, view the releases section to the right of the main GitHub page. 
 Selecting the latest release will bring you to a page where you can download the module.zip asset. This will contain everything you need to manually install the module.
 
+## Migration from Simple Calendar
+
+Simple Calendar Reborn supports migrating data from a previous Simple Calendar installation. Simply go into the Simple Calendar settings on your previous installation and export a config backup that can be imported into Simple Calendar Reborn, retaining all custom calendar configurations and notes.
+
 ## Translations
 
 Simple Calendar is available in many languages thanks to the translation community. Be sure to check out the [translation page](./simple-calendar-docs/docs/translations.md) for details on available languages and translators.
@@ -106,7 +111,7 @@ If you would like to contribute to the Simple Calendar module check out the [con
 
 Have questions? Ran into a bug? There are a couple of ways you can get help!
 
-* The first option is in the official [FoundryVTT discord](https://discord.gg/foundryvtt). The friendly folks in #module-discussion and #module-troubleshooting can help with lots of questions.
+* The first option is in the official [FoundryVTT discord](https://discord.gg/foundryvtt). The friendly folks in #module-discussion and #module-troubleshooting can help with lots of questions, or ping the maintainer, Arctis Fireblight for help.
 * You can also put in an issue on the [GitHub](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar) for the project and I will help you out!
 
 If you wish to support the development of Simple Calendar there are a few ways you can help:
