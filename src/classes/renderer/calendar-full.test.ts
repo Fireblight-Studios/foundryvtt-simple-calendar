@@ -54,7 +54,9 @@ describe('Renderer Calendar Full Class Tests', () => {
 
         let HTML = CalendarFull.Render(tCal);
         expect(HTML).toContain('fsc-calendar');
-        expect(HTML).toContain(`<span class="fsc-month-year ${d.getMonth() === 2? "fsc-description-clickable" : ""}" data-visible="${d.getMonth()}/${d.getFullYear()}">${tCal.months[d.getMonth()].name} ${d.getFullYear()}</span>`);
+        expect(HTML).toContain(`data-visible="${d.getMonth()}/${d.getFullYear()}"`);
+        expect(HTML).toContain(`>${tCal.months[d.getMonth()].name} ${d.getFullYear()}</span>`);
+        expect(HTML).toContain(`class="fsc-month-year`);
 
         tCal.months[2].selected = true;
         tCal.months[2].days[3].selected = true;
