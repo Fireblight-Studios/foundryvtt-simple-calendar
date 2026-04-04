@@ -9,6 +9,7 @@
 
 
 [![ko-fi](https://img.shields.io/badge/%20-Support%20me%20on%20Ko--fi-%23FF5E5B?style=flat&logo=ko-fi&logoColor=white)](https://ko-fi.com/arctis_fireblight)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Fireblight-Studios/foundryvtt-simple-calendar)
 
 
 ![](./src/assets/logo.png)
