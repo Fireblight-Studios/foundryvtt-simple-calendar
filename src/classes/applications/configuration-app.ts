@@ -284,7 +284,9 @@ export default class ConfigurationApp extends FormApplication {
                 custom: "FSC.Configuration.LeapYear.Rules.Custom"
             },
             months: (<Calendar>this.object).months.map((m) => {
-                return m.toTemplate();
+                const mt = m.toTemplate();
+                mt.startingWeekday = mt.startingWeekday === null ? "null" : mt.startingWeekday.toString();
+                return mt;
             }),
             monthStartingWeekdays: <{ [key: string]: string }>{},
             moons: (<Calendar>this.object).moons.map((m) => {
