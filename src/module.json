@@ -2,7 +2,7 @@
 	"id": "foundryvtt-simple-calendar-reborn",
 	"title": "Simple Calendar Reborn",
 	"description": "A simple calendar module for keeping track of game days and events. Forked from the original Simple Calendar by Vigoren.",
-	"version": "2.5.3",
+	"version": "2.5.4",
 	"authors": [
       {
         "name": "Arctis Fireblight",
