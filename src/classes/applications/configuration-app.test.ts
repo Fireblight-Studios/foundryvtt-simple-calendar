@@ -1032,7 +1032,7 @@ describe("Configuration App Class Tests", () => {
 
         //@ts-ignore
         await ca.importCalendarSave(data, fEvent);
-        expect(NManager.createJournalDirectory).toHaveBeenCalledTimes(1);
+        expect(NManager.createJournalDirectory).toHaveBeenCalledTimes(2);
         expect(tCal.loadFromSettings).toHaveBeenCalledTimes(1);
 
         gt.mockReturnValue("b");
@@ -1040,14 +1040,14 @@ describe("Configuration App Class Tests", () => {
 
         //@ts-ignore
         await ca.importCalendarSave(data, fEvent);
-        expect(NManager.createJournalDirectory).toHaveBeenCalledTimes(2);
+        expect(NManager.createJournalDirectory).toHaveBeenCalledTimes(4);
         expect(tCal.loadFromSettings).toHaveBeenCalledTimes(2);
 
         gc.mockReturnValueOnce(false).mockReturnValueOnce(false).mockReturnValueOnce(false).mockReturnValue(true);
         data.calendars[0].id = "a";
         //@ts-ignore
         await ca.importCalendarSave(data, fEvent);
-        expect(NManager.createJournalDirectory).toHaveBeenCalledTimes(3);
+        expect(NManager.createJournalDirectory).toHaveBeenCalledTimes(6);
         expect(tCal.loadFromSettings).toHaveBeenCalledTimes(2);
     });
 });
