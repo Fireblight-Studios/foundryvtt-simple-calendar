@@ -1811,8 +1811,6 @@ export default class ConfigurationApp extends FormApplication {
                 //Ensure that the note directory exists and is correct
                 await NManager.createJournalDirectory();
                 for (let i = 0; i < data.calendars.length; i++) {
-                    const calId = data.calendars[i].id;
-                    let newCalId = "";
                     if (
                         getCheckBoxInputValue(
                             `.fsc-import-export .fsc-importing .fsc-file-details input[data-id="${data.calendars[i].id}"]`,
@@ -1834,54 +1832,63 @@ export default class ConfigurationApp extends FormApplication {
                         } else {
                             const newCalendar = CalManager.addTempCalendar(data.calendars[i].name);
                             newCalendar.loadFromSettings(data.calendars[i]);
-                            newCalId = newCalendar.id;
                         }
                     }
+                }
+            }
+            // Always check for imported notes regardless of if we are importing calendars. Fix Issue GH-30
+            if (Object.prototype.hasOwnProperty.call(data, "notes")) {
+                await NManager.createJournalDirectory();
+                for (const noteName of Object.keys(data.notes)) {
+                    const calId = noteName;
+                    // Do not import the notes if the user did not check the box
                     if (
-                        Object.prototype.hasOwnProperty.call(data, "notes") &&
-                        Object.prototype.hasOwnProperty.call(data.notes, calId) &&
-                        getCheckBoxInputValue(
+                        !getCheckBoxInputValue(
                             `.fsc-import-export .fsc-importing .fsc-file-details input[data-id="${calId}-notes"]`,
                             true,
                             this.appWindow
                         )
-                    ) {
-                        const importInto = getTextInputValue(
-                            `.fsc-import-export .fsc-importing .fsc-file-details select[data-for-cal="${calId}"]`,
-                            "new",
-                            this.appWindow
-                        );
-                        const importCalendar = this.calendars.find((c) => {
-                            return c.id === importInto;
-                        });
-                        const calendarId = (newCalId || importCalendar?.id || calId).replace("_temp", "");
-                        for (let n = 0; n < data.notes[calId].length; n++) {
-                            const journalEntryData = data.notes[calId][n];
-                            const noteData = journalEntryData.flags[ModuleName]?.noteData || journalEntryData.flags[LegacyModuleName]?.noteData;
-                            if (noteData) {
-                                const noteImportedIntoDifferentCalendar = !(noteData.calendarId === calendarId);
-                                // add logic to determine if this entry came from the original version of SC, and if so, convert it to the new format
-                                const isConverted = !journalEntryData.flags[ModuleName];
-                                const legacyEntryExists = isConverted && (<Game>game).journal?.has(journalEntryData._id);
-                                if (isConverted) {
-                                    journalEntryData.flags[ModuleName] = journalEntryData.flags[LegacyModuleName];
-                                    journalEntryData.flags["core"].sheetClass = ModuleName + ".NoteSheet";
-                                    journalEntryData.flags[LegacyModuleName] = undefined;
-                                }
+                    )
+                        continue;
+                    const importInto = getTextInputValue(
+                        `.fsc-import-export .fsc-importing .fsc-file-details select[data-for-cal="${calId}"]`,
+                        calId,
+                        this.appWindow
+                    );
+                    const importCalendar = this.calendars.find((c) => {
+                        return c.id.replace("_temp", "") === importInto;
+                    });
+                    if (!importCalendar) {
+                        console.warn(`No calendar found for import into: ${importInto}`);
+                        continue;
+                    }
+                    for (let n = 0; n < data.notes[calId].length; n++) {
+                        const calendarId = (importCalendar?.id || calId).replace("_temp", "");
+                        const journalEntryData = data.notes[calId][n];
+                        const noteData = journalEntryData.flags[ModuleName]?.noteData || journalEntryData.flags[LegacyModuleName]?.noteData;
+                        if (noteData) {
+                            const noteImportedIntoDifferentCalendar = !(noteData.calendarId === calendarId);
+                            // add logic to determine if this entry came from the original version of SC, and if so, convert it to the new format
+                            const isConverted = !journalEntryData.flags[ModuleName];
+                            const legacyEntryExists = isConverted && (<Game>game).journal?.has(journalEntryData._id);
+                            if (isConverted) {
+                                journalEntryData.flags[ModuleName] = journalEntryData.flags[LegacyModuleName];
+                                journalEntryData.flags["core"].sheetClass = ModuleName + ".NoteSheet";
+                                journalEntryData.flags[LegacyModuleName] = undefined;
+                            }
 
-                                journalEntryData.flags[ModuleName].noteData.calendarId = calendarId;
-                                journalEntryData.folder = NManager.noteDirectory?.id;
-                                if (legacyEntryExists) {
-                                    // Clean up the legacy entry if it exists.
-                                    delete journalEntryData._id;
-                                    await JournalEntry.create(journalEntryData);
-                                } else if (noteImportedIntoDifferentCalendar || !(<Game>game).journal?.has(journalEntryData._id)) {
-                                    // import a note into a new calendar OR create one if it doesn't exist.
-                                    await JournalEntry.create(journalEntryData, { keepId: !noteImportedIntoDifferentCalendar });
-                                } else {
-                                    // update existing journal entry.
-                                    (<Game>game).journal?.get(journalEntryData._id)?.update(journalEntryData);
-                                }
+                            journalEntryData.flags[ModuleName].noteData.calendarId = calendarId;
+                            journalEntryData.folder = NManager.noteDirectory?.id;
+                            if (legacyEntryExists) {
+                                // Clean up the legacy entry if it exists.
+                                delete journalEntryData._id;
+                                await JournalEntry.create(journalEntryData);
+                            } else if (noteImportedIntoDifferentCalendar || !(<Game>game).journal?.has(journalEntryData._id)) {
+                                // import a note into a new calendar OR create one if it doesn't exist.
+                                await JournalEntry.create(journalEntryData, { keepId: !noteImportedIntoDifferentCalendar });
+                            } else {
+                                // update existing journal entry.
+                                (<Game>game).journal?.get(journalEntryData._id)?.update(journalEntryData);
                             }
                         }
                     }
