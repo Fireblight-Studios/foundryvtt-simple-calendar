@@ -1807,6 +1807,7 @@ export default class ConfigurationApp extends FormApplication {
             ) {
                 this.globalConfiguration.permissions.loadFromSettings(data.permissions);
             }
+            const idLookupTable: Record<string, string> = {};
             if (Object.prototype.hasOwnProperty.call(data, "calendars") && data.calendars.length) {
                 //Ensure that the note directory exists and is correct
                 await NManager.createJournalDirectory();
@@ -1826,12 +1827,17 @@ export default class ConfigurationApp extends FormApplication {
                         const importCalendar = this.calendars.find((c) => {
                             return c.id === importInto;
                         });
+                        // Record the original id just in case we need to look it up later
+                        const originalId = data.calendars[i].id;
                         delete data.calendars[i].id;
                         if (importCalendar) {
                             importCalendar.loadFromSettings(data.calendars[i]);
                         } else {
                             const newCalendar = CalManager.addTempCalendar(data.calendars[i].name);
                             newCalendar.loadFromSettings(data.calendars[i]);
+                            this.calendars.push(newCalendar);
+                            // map the old and new IDs so that notes can be mapped to the correct calendar later.
+                            idLookupTable[originalId] = newCalendar.id;
                         }
                     }
                 }
@@ -1850,11 +1856,16 @@ export default class ConfigurationApp extends FormApplication {
                         )
                     )
                         continue;
-                    const importInto = getTextInputValue(
+                    let importInto = getTextInputValue(
                         `.fsc-import-export .fsc-importing .fsc-file-details select[data-for-cal="${calId}"]`,
                         calId,
                         this.appWindow
-                    );
+                    ).replace("_temp", ""); // Sometimes will have "_temp" appended, need to normalize (GH-41)
+                    // Handle the case where the user wants to import into a new calendar
+                    if (importInto === "new") {
+                        importInto = idLookupTable[calId].replace("_temp", "");
+                        console.log(`Importing notes into new calendar: ${importInto}`);
+                    }
                     const importCalendar = this.calendars.find((c) => {
                         return c.id.replace("_temp", "") === importInto;
                     });
