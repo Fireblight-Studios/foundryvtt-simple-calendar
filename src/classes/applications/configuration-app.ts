@@ -1759,7 +1759,7 @@ export default class ConfigurationApp extends FormApplication {
                                 })?.name || key
                             }</strong>: ${GameSettings.Localize("FSC.CalendarNotes")}</label></label>`;
 
-                            html += `<label>${GameSettings.Localize("FSC.ImportInto")}:&nbsp;<select data-for-cal="">`;
+                            html += `<label>${GameSettings.Localize("FSC.ImportInto")}:&nbsp;<select data-for-cal="${key}">`;
                             const selectedIndex = this.calendars.findIndex((c) => {
                                 return c.id.indexOf(key) === 0;
                             });
@@ -1863,7 +1863,12 @@ export default class ConfigurationApp extends FormApplication {
                     ).replace("_temp", ""); // Sometimes will have "_temp" appended, need to normalize (GH-41)
                     // Handle the case where the user wants to import into a new calendar
                     if (importInto === "new") {
-                        importInto = idLookupTable[calId].replace("_temp", "");
+                        const mappedCalendarId = idLookupTable[calId];
+                        if (!mappedCalendarId) {
+                            console.warn(`Skipping notes for ${calId}: no new calendar was created for this import target.`);
+                            continue;
+                        }
+                        importInto = mappedCalendarId.replace("_temp", "");
                         console.log(`Importing notes into new calendar: ${importInto}`);
                     }
                     const importCalendar = this.calendars.find((c) => {
