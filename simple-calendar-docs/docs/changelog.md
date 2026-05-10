@@ -153,8 +153,8 @@ An example of this would a calendar that has a leap year every 4 years but the f
 
 ### Bug Fixes
 
-- Fixed a bug when the [Use Game Time For Chat Message Timestamps](https://simplecalendar.info/docs/global-configuration/settings#use-game-time-for-chat-message-timestamps) setting is enable, messages by non GM players would not have an in game time associated with it. ([#531](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/531))
-- Fixed a bug in the PF2E system when using the [Use Game Time For Chat Message Timestamps](https://simplecalendar.info/docs/global-configuration/settings#use-game-time-for-chat-message-timestamps) setting the timestamps would be the incorrect time. ([#534](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/534), [#539](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/discussions/539))
+- Fixed a bug when the [Use Game Time For Chat Message Timestamps](https://simplecalendarreborn.net/docs/global-configuration/settings#use-game-time-for-chat-message-timestamps) setting is enable, messages by non GM players would not have an in game time associated with it. ([#531](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/531))
+- Fixed a bug in the PF2E system when using the [Use Game Time For Chat Message Timestamps](https://simplecalendarreborn.net/docs/global-configuration/settings#use-game-time-for-chat-message-timestamps) setting the timestamps would be the incorrect time. ([#534](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/534), [#539](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/discussions/539))
 - Fixed an issue with the migration script when migrating from a Foundry v9 world to a Foundry v11 world.
 
 
@@ -166,9 +166,9 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 
 ### Documentation Changes
 
-- Added documentation for the new [Leap Year Starting Year](https://simplecalendar.info/docs/calendar-configuration/leap-year-settings#starting-year) setting.
-- Updated the FAQ section [Why Is Simple Calendar not in Sync with X module/system?](https://simplecalendar.info/docs/faq#why-is-simple-calendar-not-in-sync-with-x-modulesystem) to better word any issues with specific systems or modules.
-- Added a new FAQ [Simple Calendar Says "There is an active combat/combats running" but there are no combats running](https://simplecalendar.info/docs/faq#simple-calendar-says-there-is-an-active-combatcombats-running-but-there-are-no-combats-running).
+- Added documentation for the new [Leap Year Starting Year](https://simplecalendarreborn.net/docs/calendar-configuration/leap-year-settings#starting-year) setting.
+- Updated the FAQ section [Why Is Simple Calendar not in Sync with X module/system?](https://simplecalendarreborn.net/docs/faq#why-is-simple-calendar-not-in-sync-with-x-modulesystem) to better word any issues with specific systems or modules.
+- Added a new FAQ [Simple Calendar Says "There is an active combat/combats running" but there are no combats running](https://simplecalendarreborn.net/docs/faq#simple-calendar-says-there-is-an-active-combatcombats-running-but-there-are-no-combats-running).
 
 <hr/>
 
@@ -179,7 +179,7 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 
 ### Bug Fixes
 
-- Fixed a bug when the [Sync Date/Time Changes Across Calendars](https://simplecalendar.info/docs/global-configuration/settings#sync-datetime-changes-across-calendars) setting is enabled and multiple calendars are configured that would cause all calendars to emit the [DateTimeChange](https://simplecalendar.info/docs/developing-with-sc/api/namespaces/SimpleCalendar.Hooks#datetimechange) hook instead of just the active calendar.
+- Fixed a bug when the [Sync Date/Time Changes Across Calendars](https://simplecalendarreborn.net/docs/global-configuration/settings#sync-datetime-changes-across-calendars) setting is enabled and multiple calendars are configured that would cause all calendars to emit the [DateTimeChange](https://simplecalendarreborn.net/docs/developing-with-sc/api/namespaces/SimpleCalendar.Hooks#datetimechange) hook instead of just the active calendar.
 - Fixed a bug in the Pathfinder 1e system where every turn in a combat would advance the calendars time instead of just advancing the time at the end of the round. ([#528](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/528))
 - Fixed a rare issue where calling the `SimpleCalendar.api.showCalendar` API function with an invalid day set could cause the calendar to display incorrectly.
 - Fixed a very rare issue when comparing 2 dates the months could be considered the same when they shouldn't.
@@ -229,7 +229,7 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 
 ### Bug Fixes
 
-- Fixed a bug where certain chat messages would appear twice if the [Use Game Time For Chat Message Timestamps](https://simplecalendar.info/docs/global-configuration/settings#use-game-time-for-chat-message-timestamps) setting is enabled. ([#515](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/515))
+- Fixed a bug where certain chat messages would appear twice if the [Use Game Time For Chat Message Timestamps](https://simplecalendarreborn.net/docs/global-configuration/settings#use-game-time-for-chat-message-timestamps) setting is enabled. ([#515](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/515))
 - Fixed a bug where the game time would not be included when the chat log was exported. ([514](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/514))
 - Fixed a bug when players saved their client settings through Simple Calendars configuration dialog the date of the calendar would change to a year of 0.
 - Fixed an error that would get logged in certain circumstances when using the configuration dialog. ([424](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/issues/424))
@@ -246,7 +246,7 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 
 ### Documentation Changes
 
-- Added search to the [documentation site](https://simplecalendar.info). This search is quite robust and is powered by [algolia](https://www.algolia.com/).
+- Added search to the [documentation site](https://simplecalendarreborn.net). This search is quite robust and is powered by [algolia](https://www.algolia.com/).
 - Fixed several redirects that were not working.
 
 <hr/>
@@ -262,8 +262,8 @@ Simple Calendar can now be configured to change chat message timestamps from usi
 
 **IMPORTANT:** Only chat messages created after this version of SC is installed will show timestamps using in game timestamps. Chat messages created before do not contain the required metadata for displaying the in game time they were created.
 
- - New setting under the `Global Configuration` called "[Use Game Time For Chat Message Timestamps](https://simplecalendar.info/docs/global-configuration/settings#use-game-time-for-chat-message-timestamps)" that is used to enable or disable this feature. This will re-render the entire chat log for every player when changed.
- - New setting under the `Display Options -> Date/Time Formatting` for each calendar called "[Chat Message Timestamp Format](https://simplecalendar.info/docs/calendar-configuration/display-options#datetime-formatting)" that allows you to specify how the chat message timestamp is displayed.
+ - New setting under the `Global Configuration` called "[Use Game Time For Chat Message Timestamps](https://simplecalendarreborn.net/docs/global-configuration/settings#use-game-time-for-chat-message-timestamps)" that is used to enable or disable this feature. This will re-render the entire chat log for every player when changed.
+ - New setting under the `Display Options -> Date/Time Formatting` for each calendar called "[Chat Message Timestamp Format](https://simplecalendarreborn.net/docs/calendar-configuration/display-options#datetime-formatting)" that allows you to specify how the chat message timestamp is displayed.
 
 ### Quality of Life Updates
 
@@ -290,7 +290,7 @@ The documentation site has been completely re-done. The new site makes it easier
 
 The new site also contains documentation for past versions of Simple Calendar so users can get help they need no matter the version they are using!
 
-Be sure to check it out! [https://simplecalendar.info](https://simplecalendar.info)
+Be sure to check it out! [https://simplecalendarreborn.net](https://simplecalendarreborn.net)
 
 
 <hr/>
@@ -317,7 +317,7 @@ Fixes Include:
 ### Bug Fixes
 
 - Fixed a bug where system specific themes would not load images properly if a routePrefix was set in Foundry's configuration.
-- Fixed an issue where if the setting [Show Clock](https://simplecalendar.info/pages/calendar-configuration/index/time-settings.html#clock-settings) was disabled and a user was using the [Quick Increment](https://simplecalendar.info/pages/calendar-configuration/index/display-options.html#compact-view-options) Compact view layout no buttons would appear to adjust the date.
+- Fixed an issue where if the setting [Show Clock](https://simplecalendarreborn.net/pages/calendar-configuration/index/time-settings.html#clock-settings) was disabled and a user was using the [Quick Increment](https://simplecalendarreborn.net/pages/calendar-configuration/index/display-options.html#compact-view-options) Compact view layout no buttons would appear to adjust the date.
 - Fixed a bug where a macro could not be selected from the macro list in a note.
 
 ### Translation Updates
@@ -338,10 +338,10 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 
 ### Quality of Life Updates
 
-- Changed the [Update Frequency](https://simplecalendar.info/pages/calendar-configuration/index/time-settings.html#clock-settings) setting so that it can support decimals. This can allow you to set an "Update Frequency" of 0.5 and a "Game Seconds Per Real Life Seconds" of 2 to get the game to move at twice the speed but have the clock still update for every game second.
+- Changed the [Update Frequency](https://simplecalendarreborn.net/pages/calendar-configuration/index/time-settings.html#clock-settings) setting so that it can support decimals. This can allow you to set an "Update Frequency" of 0.5 and a "Game Seconds Per Real Life Seconds" of 2 to get the game to move at twice the speed but have the clock still update for every game second.
 - Updated the compact view to show up to 5 moons before collapsing them into a hover-over view.
 - Added a new client setting "Compact View Scale" that allows you to change the scale at which the compact view is displayed at. You can use this to make the compact view appear larger or smaller. The number represents the percentage of the scale size when compared to the default size, 100%. The range goes in increments of 10 from 70% to 200%.
-- Added support for keyboard key modifiers when in compact view with [Time Control Layout](https://simplecalendar.info/pages/calendar-configuration/index/display-options.html#compact-view-options) set to `Quick Increment`:
+- Added support for keyboard key modifiers when in compact view with [Time Control Layout](https://simplecalendarreborn.net/pages/calendar-configuration/index/display-options.html#compact-view-options) set to `Quick Increment`:
   - **Shift Key**: When the shift key is held down the amount of time that is changed for each increment is increased from `1 round, 1 minute, 5 minutes, 15 minutes, 1 hour` to `5 rounds, 5 minutes, 20 minutes, 45 minutes, 5 hours`.
   - **Control Key**: When the control key is held down each increment will be subtracted from the current time, this can be combined with the shift key for going back in time by larger amounts.
 
@@ -349,7 +349,7 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 
 - Fixed an issue where the hook `SimpleCalendar.Hooks.DateTimeChange` would fire twice when the time changed while the clock was running. It should now only fire once for every time increment.
 - Fixed an issue where on the full calendar view the preset time of day buttons would sometimes get bumped down to a second row.
-- Fixed an issue where when in the compact view with the [Time Control Layout](https://simplecalendar.info/pages/calendar-configuration/index/display-options.html#compact-view-options) set to `Full Controls` the unit selector would open up when near the top of the page potentially making some options inaccessible.
+- Fixed an issue where when in the compact view with the [Time Control Layout](https://simplecalendarreborn.net/pages/calendar-configuration/index/display-options.html#compact-view-options) set to `Full Controls` the unit selector would open up when near the top of the page potentially making some options inaccessible.
 
 ### Translation Updates
 
@@ -360,8 +360,8 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 ### Documentation Changes
 
 - Improved the wording of the "Persistent Open" client setting to be more clear on where the toggle button is.
-- Updated the [Update Frequency](https://simplecalendar.info/pages/calendar-configuration/index/time-settings.html#clock-settings) documentation to note it supports decimals.
-- Updated the [Client Setting](https://simplecalendar.info/pages/global-configuration/index/settings.html#client-settings) documentation to include information about the new "Compact View Scale" setting.
+- Updated the [Update Frequency](https://simplecalendarreborn.net/pages/calendar-configuration/index/time-settings.html#clock-settings) documentation to note it supports decimals.
+- Updated the [Client Setting](https://simplecalendarreborn.net/pages/global-configuration/index/settings.html#client-settings) documentation to include information about the new "Compact View Scale" setting.
 
 <hr/>
 
@@ -407,15 +407,15 @@ The compact display also now lets you choose from 2 button layouts for changing 
 - **Full**: This is the current layout and allows you to change any time unit forward or back.<br/>![](images/sc-v2-theme-dark-comp.png)<br/><br/>
 - **Quick Increment**: This layout offers 5 options (1 Round, 1 Minute, 5 Minutes, 15 Minutes, 1 Hour) and allows users to quickly advance the time by those amounts.<br/>![](images/sc-v2-theme-dark-comp-qi.png)
 
-The setting for this can be found under the calendars [Display Options](https://simplecalendar.info/pages/calendar-configuration/index/display-options.html) configuration section.
+The setting for this can be found under the calendars [Display Options](https://simplecalendarreborn.net/pages/calendar-configuration/index/display-options.html) configuration section.
 
 ### Quality of Life Updates
 
-- Added a new client setting, [Persistent Open](https://simplecalendar.info/pages/global-configuration/index/settings.html#client-settings), that when enabled will remove the close button from the calendar window and prevent the escape key from closing it. The button under the scene control then becomes a toggle to open and close the calendar.
+- Added a new client setting, [Persistent Open](https://simplecalendarreborn.net/pages/global-configuration/index/settings.html#client-settings), that when enabled will remove the close button from the calendar window and prevent the escape key from closing it. The button under the scene control then becomes a toggle to open and close the calendar.
 
 ### Bug Fixes
 
-- Fixed an issue when changing the [Update Frequency](https://simplecalendar.info/pages/calendar-configuration/index/time-settings.html#clock-settings) setting while the clock was running that would result in the time updating incorrectly.
+- Fixed an issue when changing the [Update Frequency](https://simplecalendarreborn.net/pages/calendar-configuration/index/time-settings.html#clock-settings) setting while the clock was running that would result in the time updating incorrectly.
 - Fixed an issue when reloading the page would not properly recognise any active combats and in certain cases the clock could be started.
 - Fixed a few style issues with the Forbidden Lands theme.
 - Fixed an issue with the Eclipse Phase system where note pages couldn't be added (Style change hide the interface).
@@ -425,9 +425,9 @@ The setting for this can be found under the calendars [Display Options](https://
 
 ### API Changes
 
-- Added a new function [`SimpleCalendar.api.isOpen()`](https://simplecalendar.info/functions/SimpleCalendar.api.isOpen.html) that will return a boolean if the calendar is open or closed.
-- Added a new hook [`SimpleCalendar.Hooks.Init`](https://simplecalendar.info/variables/SimpleCalendar.Hooks.Init.html). This hook fires as Simple Calendar is initializing but before the module is fully ready to use.
-- Added a new function, [`SimpleCalendar.api.addSidebarButton`](https://simplecalendar.info/functions/SimpleCalendar.api.addSidebarButton.html), for adding custom buttons to the right of the calendar.
+- Added a new function [`SimpleCalendar.api.isOpen()`](https://simplecalendarreborn.net/functions/SimpleCalendar.api.isOpen.html) that will return a boolean if the calendar is open or closed.
+- Added a new hook [`SimpleCalendar.Hooks.Init`](https://simplecalendarreborn.net/variables/SimpleCalendar.Hooks.Init.html). This hook fires as Simple Calendar is initializing but before the module is fully ready to use.
+- Added a new function, [`SimpleCalendar.api.addSidebarButton`](https://simplecalendarreborn.net/functions/SimpleCalendar.api.addSidebarButton.html), for adding custom buttons to the right of the calendar.
 
 ### Translation Updates
 
@@ -442,10 +442,10 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 
 ### Documentation Changes
 
-- Added a new [FAQ](https://simplecalendar.info/pages/site/docs/faq.html) page to help answer some commonly asked questions!
-- Added documentation for the new [client setting Persistent Open](https://simplecalendar.info/pages/global-configuration/index/settings.html#client-settings).
-- Added documentation for the new [compact view options](https://simplecalendar.info/pages/calendar-configuration/index/display-options.html#compact-view-options).
-- Updated the [client settings](https://simplecalendar.info/pages/global-configuration/index/settings.html#client-settings) documentation for the new Persistent Open setting.
+- Added a new [FAQ](https://simplecalendarreborn.net/pages/site/docs/faq.html) page to help answer some commonly asked questions!
+- Added documentation for the new [client setting Persistent Open](https://simplecalendarreborn.net/pages/global-configuration/index/settings.html#client-settings).
+- Added documentation for the new [compact view options](https://simplecalendarreborn.net/pages/calendar-configuration/index/display-options.html#compact-view-options).
+- Updated the [client settings](https://simplecalendarreborn.net/pages/global-configuration/index/settings.html#client-settings) documentation for the new Persistent Open setting.
 - Updated images of the compact view.
 - Updated image for the client settings.
 - Updated the image for the date/time formatting section of the display options.
@@ -490,12 +490,12 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 
 ### API Changes
 
-- Added a new function [`SimpleCalendar.api.currentDateTime()`](https://simplecalendar.info/functions/SimpleCalendar.api.currentDateTime.html) that returns a [DateTime](https://simplecalendar.info/types/SimpleCalendar.DateTime.html) object with the current date and time of the active calendar, or calendar with the passed in ID.
-- Added a new function [`SimpleCalendar.api.currentDateTimeDisplay()`](https://simplecalendar.info/functions/SimpleCalendar.api.currentDateTimeDisplay.html) that returns a [DateDisplayData](https://simplecalendar.info/interfaces/SimpleCalendar.DateDisplayData.html) object for the current date and time of the active calendar, or the calendar with the passed in ID.
-- Added a new function [`SimpleCalendar.api.formatTimestamp()`](https://simplecalendar.info/functions/SimpleCalendar.api.formatTimestamp.html) that functions just like the [formatDateTime](https://simplecalendar.info/functions/SimpleCalendar.api.formatDateTime.html) function but instead takes in a timestamp instead of a [DateTimeParts](https://simplecalendar.info/types/SimpleCalendar.DateTimeParts.html) object.
-- Added a new function [`SimpleCalendar.api.getAllThemes()`](https://simplecalendar.info/functions/SimpleCalendar.api.getAllThemes.html) that returns a list of all available themes for players to choose from.
-- Added a new function [`SimpleCalendar.api.getCurrentTheme()`](https://simplecalendar.info/functions/SimpleCalendar.api.getCurrentTheme.html) that returns the ID of the theme being used by the player.
-- Added a new function [`SimpleCalendar.api.setTheme()`](https://simplecalendar.info/functions/SimpleCalendar.api.setTheme.html) that takes in a theme ID and will set Simple Calendars theme to that ID for the player. An information notification will be shown to the player if the theme was changed to let them know it has been changed programmatically.
+- Added a new function [`SimpleCalendar.api.currentDateTime()`](https://simplecalendarreborn.net/functions/SimpleCalendar.api.currentDateTime.html) that returns a [DateTime](https://simplecalendarreborn.net/types/SimpleCalendar.DateTime.html) object with the current date and time of the active calendar, or calendar with the passed in ID.
+- Added a new function [`SimpleCalendar.api.currentDateTimeDisplay()`](https://simplecalendarreborn.net/functions/SimpleCalendar.api.currentDateTimeDisplay.html) that returns a [DateDisplayData](https://simplecalendarreborn.net/interfaces/SimpleCalendar.DateDisplayData.html) object for the current date and time of the active calendar, or the calendar with the passed in ID.
+- Added a new function [`SimpleCalendar.api.formatTimestamp()`](https://simplecalendarreborn.net/functions/SimpleCalendar.api.formatTimestamp.html) that functions just like the [formatDateTime](https://simplecalendarreborn.net/functions/SimpleCalendar.api.formatDateTime.html) function but instead takes in a timestamp instead of a [DateTimeParts](https://simplecalendarreborn.net/types/SimpleCalendar.DateTimeParts.html) object.
+- Added a new function [`SimpleCalendar.api.getAllThemes()`](https://simplecalendarreborn.net/functions/SimpleCalendar.api.getAllThemes.html) that returns a list of all available themes for players to choose from.
+- Added a new function [`SimpleCalendar.api.getCurrentTheme()`](https://simplecalendarreborn.net/functions/SimpleCalendar.api.getCurrentTheme.html) that returns the ID of the theme being used by the player.
+- Added a new function [`SimpleCalendar.api.setTheme()`](https://simplecalendarreborn.net/functions/SimpleCalendar.api.setTheme.html) that takes in a theme ID and will set Simple Calendars theme to that ID for the player. An information notification will be shown to the player if the theme was changed to let them know it has been changed programmatically.
 
 ### Translation Updates
 
@@ -514,7 +514,7 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 
 ### Quality of Life Improvements
 
-- A new client setting [Always Show Note List](https://simplecalendar.info/pages/global-configuration/index/settings.html#client-settings) has been added. This setting will make it so the note list will always be visible and can not be closed. The only exception is if the calendar list or note search are opened they will open over top of the note list, but when closed the note list will remain visible.
+- A new client setting [Always Show Note List](https://simplecalendarreborn.net/pages/global-configuration/index/settings.html#client-settings) has been added. This setting will make it so the note list will always be visible and can not be closed. The only exception is if the calendar list or note search are opened they will open over top of the note list, but when closed the note list will remain visible.
 
 ### Bug Fixes
 
@@ -546,7 +546,7 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 
 ### Theming
 
-I have done a lot of work around making theming Simple Calendar as easy as possible. This allows me to add new themes easier and quicker. It also opens up the ability of third party modules or individuals to easily customize the look of Simple Calendar. For more details on how to theme Simple Calendar check out the [theming](https://simplecalendar.info//pages/docs/developing-with-sc/index/theming.html) documentation!
+I have done a lot of work around making theming Simple Calendar as easy as possible. This allows me to add new themes easier and quicker. It also opens up the ability of third party modules or individuals to easily customize the look of Simple Calendar. For more details on how to theme Simple Calendar check out the [theming](https://simplecalendarreborn.net//pages/docs/developing-with-sc/index/theming.html) documentation!
 
 Changes that has been done to enable easy theming:
 
@@ -567,8 +567,8 @@ To go along with these changes I have updated all the existing themes and added 
 
 ### Quality of Life Improvements
 
-- Added a new client setting [Remember Compact Position](https://simplecalendar.info/pages/global-configuration/index/settings.html#client-settings). When enabled Simple Calendar will remember where the compact view is on the screen separate from where the full view is. This allows users to place the compact view in a corner, switch to full view and have the full view in the middle of the screen, then switch back to compact view, and it will return to the corner.
-- Added a new client setting [Side Drawer Open Direction](https://simplecalendar.info/pages/global-configuration/index/settings.html#client-settings). This allows users to choose which direction from the calendar side drawers like the note list will open. The current options are Right, Left and Down that will open the side drawers to the right, to the left and below the main calendar.
+- Added a new client setting [Remember Compact Position](https://simplecalendarreborn.net/pages/global-configuration/index/settings.html#client-settings). When enabled Simple Calendar will remember where the compact view is on the screen separate from where the full view is. This allows users to place the compact view in a corner, switch to full view and have the full view in the middle of the screen, then switch back to compact view, and it will return to the corner.
+- Added a new client setting [Side Drawer Open Direction](https://simplecalendarreborn.net/pages/global-configuration/index/settings.html#client-settings). This allows users to choose which direction from the calendar side drawers like the note list will open. The current options are Right, Left and Down that will open the side drawers to the right, to the left and below the main calendar.
 
 ### Bug Fixes
 
@@ -580,10 +580,10 @@ To go along with these changes I have updated all the existing themes and added 
 
 ### API Updates
 
-- Changed the [`SimpleCalendar.api.addNote()`](https://simplecalendar.info/functions/SimpleCalendar.api.addNote.html) function so that the `repeats` and `categories` parameters are now optional.
-- Changed the [`SimpleCalendar.api.addNote()`](https://simplecalendar.info/functions/SimpleCalendar.api.addNote.html) function so that the start and end dates are now [DateTimeParts](https://simplecalendar.info/types/SimpleCalendar.DateTimeParts.html) and any missing date/time properties on them will be filled out with the current date/time equivalent.
-- Added a new optional parameter to the [`SimpleCalendar.api.addNote()`](https://simplecalendar.info/functions/SimpleCalendar.api.addNote.html) function, `userVisibility` that takes in an array of user ID's. These users will be able to view the note.
-- Added a new optional parameter to the [`SimpleCalendar.api.addNote()`](https://simplecalendar.info/functions/SimpleCalendar.api.addNote.html) function, `remindUsers` that takes in an array of user ID's. These users will be reminded of the note.
+- Changed the [`SimpleCalendar.api.addNote()`](https://simplecalendarreborn.net/functions/SimpleCalendar.api.addNote.html) function so that the `repeats` and `categories` parameters are now optional.
+- Changed the [`SimpleCalendar.api.addNote()`](https://simplecalendarreborn.net/functions/SimpleCalendar.api.addNote.html) function so that the start and end dates are now [DateTimeParts](https://simplecalendarreborn.net/types/SimpleCalendar.DateTimeParts.html) and any missing date/time properties on them will be filled out with the current date/time equivalent.
+- Added a new optional parameter to the [`SimpleCalendar.api.addNote()`](https://simplecalendarreborn.net/functions/SimpleCalendar.api.addNote.html) function, `userVisibility` that takes in an array of user ID's. These users will be able to view the note.
+- Added a new optional parameter to the [`SimpleCalendar.api.addNote()`](https://simplecalendarreborn.net/functions/SimpleCalendar.api.addNote.html) function, `remindUsers` that takes in an array of user ID's. These users will be reminded of the note.
 
 ### Translation Updates
 
@@ -602,20 +602,20 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 ### Documentation Changes
 
 - Added a link to the GitHub page for the module in the header of the documentation site.
-- Added documentation for [customizing the themes](https://simplecalendar.info/developing-with-sc/index/theming.html) of Simple Calendar.
+- Added documentation for [customizing the themes](https://simplecalendarreborn.net/developing-with-sc/index/theming.html) of Simple Calendar.
 - Added documentation for [contributing](https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/blob/main/CONTRIBUTING.md#themes) a new theme to Simple Calendar.
-- Added documentation that outlines all the [available themes](https://simplecalendar.info/pages/docs/using-sc/index/themes.html) within Simple Calendar.
-- Updated the [client settings](https://simplecalendar.info/pages/global-configuration/index/settings.html#client-settings) documentation to include the new settings `Remember Compact Position` and `Side Drawer Open Direction`.
-- Fixed some typos in the example of the [setDate API function](https://simplecalendar.info/functions/SimpleCalendar.api.setDate.html)
+- Added documentation that outlines all the [available themes](https://simplecalendarreborn.net/pages/docs/using-sc/index/themes.html) within Simple Calendar.
+- Updated the [client settings](https://simplecalendarreborn.net/pages/global-configuration/index/settings.html#client-settings) documentation to include the new settings `Remember Compact Position` and `Side Drawer Open Direction`.
+- Fixed some typos in the example of the [setDate API function](https://simplecalendarreborn.net/functions/SimpleCalendar.api.setDate.html)
 - Fixed typos in the API documentation when referencing a `second` property when it should be `seconds`.
-- Updated the example for the [timestampToDate](https://simplecalendar.info/functions/SimpleCalendar.api.timestampToDate.html) API function. 
-- Updated the example for the [DateTimeChange](https://simplecalendar.info/variables/SimpleCalendar.Hooks.DateTimeChange.html) hook.
-- Updated the example for the [getAllSeasons](https://simplecalendar.info/functions/SimpleCalendar.api.getAllSeasons.html) API function.
-- Updated the example for the [getCurrentSeason](https://simplecalendar.info/functions/SimpleCalendar.api.getCurrentSeason.html) API function.
-- Updated the example for the [getAllMonths](https://simplecalendar.info/functions/SimpleCalendar.api.getAllMonths.html) API function.
-- Updated the example for the [getCurrentMonth](https://simplecalendar.info/functions/SimpleCalendar.api.getCurrentMonth.html) API function.
-- Updated the example for the [getAllWeekdays](https://simplecalendar.info/functions/SimpleCalendar.api.getAllWeekdays.html) API function.
-- Updated the example for the [getCurrentWeekday](https://simplecalendar.info/functions/SimpleCalendar.api.getCurrentWeekday.html) API function.
+- Updated the example for the [timestampToDate](https://simplecalendarreborn.net/functions/SimpleCalendar.api.timestampToDate.html) API function. 
+- Updated the example for the [DateTimeChange](https://simplecalendarreborn.net/variables/SimpleCalendar.Hooks.DateTimeChange.html) hook.
+- Updated the example for the [getAllSeasons](https://simplecalendarreborn.net/functions/SimpleCalendar.api.getAllSeasons.html) API function.
+- Updated the example for the [getCurrentSeason](https://simplecalendarreborn.net/functions/SimpleCalendar.api.getCurrentSeason.html) API function.
+- Updated the example for the [getAllMonths](https://simplecalendarreborn.net/functions/SimpleCalendar.api.getAllMonths.html) API function.
+- Updated the example for the [getCurrentMonth](https://simplecalendarreborn.net/functions/SimpleCalendar.api.getCurrentMonth.html) API function.
+- Updated the example for the [getAllWeekdays](https://simplecalendarreborn.net/functions/SimpleCalendar.api.getAllWeekdays.html) API function.
+- Updated the example for the [getCurrentWeekday](https://simplecalendarreborn.net/functions/SimpleCalendar.api.getCurrentWeekday.html) API function.
 
 <hr/>
 
@@ -672,9 +672,9 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 ### Documentation Updates
 
 - Added better styling for tables in the new look.
-- Updated the [note editing documentation](https://simplecalendar.info/pages/docs/using-sc/index/notes/index/adding-editing-removing.html#editing-notes) to account for the new `All Players` option in the `Who Can View` setting.
-- Updated the [notes documentation](https://simplecalendar.info/pages/docs/using-sc/index/notes/index/index.html) to account for the changes to the Player Visible option
-- Updated the [notes documentation](https://simplecalendar.info/pages/docs/using-sc/index/notes/index/index.html) to account for the new context menu in the note list.
+- Updated the [note editing documentation](https://simplecalendarreborn.net/pages/docs/using-sc/index/notes/index/adding-editing-removing.html#editing-notes) to account for the new `All Players` option in the `Who Can View` setting.
+- Updated the [notes documentation](https://simplecalendarreborn.net/pages/docs/using-sc/index/notes/index/index.html) to account for the changes to the Player Visible option
+- Updated the [notes documentation](https://simplecalendarreborn.net/pages/docs/using-sc/index/notes/index/index.html) to account for the new context menu in the note list.
 
 <hr/>
 
@@ -737,21 +737,21 @@ Thank you to the follow people for making updates to Simple Calendars translatio
 
 ### API Changes
 
-- Updated the [`sc-full-calendar`](https://simplecalendar.info/enums/HandlebarHelpers.html#sc_full_calendar) Handlebar Helper to accept a new parameter `showDescriptions` to choose if you want the descriptions for months, weekdays and seasons to be able to show or not.
-- The `description` property has been added to the [MonthData](https://simplecalendar.info/interfaces/SimpleCalendar.MonthData.html) object. All functions that return  month data will now include the description, if set.
-- The `description` property has been added to the [SeasonData](https://simplecalendar.info/interfaces/SimpleCalendar.SeasonData.html) object. All functions that return  season data will now include the description, if set.
-- The `description` property has been added to the [WeekdayData](https://simplecalendar.info/interfaces/SimpleCalendar.WeekdayData.html) object. All functions that return  weekday data will now include the description, if set.
-- The `restday` property has been added to the [WeekdayData](https://simplecalendar.info/interfaces/SimpleCalendar.WeekdayData.html) object. All functions that return  weekday data will now include if the weekday is considered a rest day or not.
+- Updated the [`sc-full-calendar`](https://simplecalendarreborn.net/enums/HandlebarHelpers.html#sc_full_calendar) Handlebar Helper to accept a new parameter `showDescriptions` to choose if you want the descriptions for months, weekdays and seasons to be able to show or not.
+- The `description` property has been added to the [MonthData](https://simplecalendarreborn.net/interfaces/SimpleCalendar.MonthData.html) object. All functions that return  month data will now include the description, if set.
+- The `description` property has been added to the [SeasonData](https://simplecalendarreborn.net/interfaces/SimpleCalendar.SeasonData.html) object. All functions that return  season data will now include the description, if set.
+- The `description` property has been added to the [WeekdayData](https://simplecalendarreborn.net/interfaces/SimpleCalendar.WeekdayData.html) object. All functions that return  weekday data will now include the description, if set.
+- The `restday` property has been added to the [WeekdayData](https://simplecalendarreborn.net/interfaces/SimpleCalendar.WeekdayData.html) object. All functions that return  weekday data will now include if the weekday is considered a rest day or not.
 
 
 ### Documentation Updates
 
 - Upgraded to the latest version of Typedoc which brings a host of usability and visual improvements.
-- Updated the [month settings](https://simplecalendar.info/pages/docs/calendar-configuration/month-settings.html) documentation to reflect the new description setting.
-- Updated the [season settings](https://simplecalendar.info/pages/docs/calendar-configuration/season-settings.html) documentation to reflect the new description setting.
-- Updated the [weekday settings](https://simplecalendar.info/pages/docs/calendar-configuration/weekday-settings.html) documentation to reflect the new rest day and description settings.
-- Updated the [using Simple Calendar](https://simplecalendar.info/pages/docs/using-sc/index/index.html) documentation to include information about the description popups and show example images.
-- Updated the [using Simple Calendar](https://simplecalendar.info/pages/docs/using-sc/index/index.html) documentation to include information about the new context menu for days.
+- Updated the [month settings](https://simplecalendarreborn.net/pages/docs/calendar-configuration/month-settings.html) documentation to reflect the new description setting.
+- Updated the [season settings](https://simplecalendarreborn.net/pages/docs/calendar-configuration/season-settings.html) documentation to reflect the new description setting.
+- Updated the [weekday settings](https://simplecalendarreborn.net/pages/docs/calendar-configuration/weekday-settings.html) documentation to reflect the new rest day and description settings.
+- Updated the [using Simple Calendar](https://simplecalendarreborn.net/pages/docs/using-sc/index/index.html) documentation to include information about the description popups and show example images.
+- Updated the [using Simple Calendar](https://simplecalendarreborn.net/pages/docs/using-sc/index/index.html) documentation to include information about the new context menu for days.
 
 <hr/>
 
@@ -803,7 +803,7 @@ Many people have contributed on Weblate all ready to update and add translations
 
 ### Quality of Life Updates
 
-- When the [Pathfinder 2E: World Clock Sync](https://simplecalendar.info/pages/docs/calendar-configuration/general-settings.html#pathfinder-2e-world-clock-sync) is enabled the settings that it disables will now appear disabled in the configuration dialog with a message letting users know why.
+- When the [Pathfinder 2E: World Clock Sync](https://simplecalendarreborn.net/pages/docs/calendar-configuration/general-settings.html#pathfinder-2e-world-clock-sync) is enabled the settings that it disables will now appear disabled in the configuration dialog with a message letting users know why.
 
 ### Bug Fixes
 
@@ -871,10 +871,10 @@ Other systems will get their own specific themes as time goes on
 
 ### Documentation Changes
 
-- Updated the [Client Settings](https://simplecalendar.info/pages/docs/global-configuration/settings.html#client-settings) docs to include details about the new note reminder setting.
-- Updated the [Using Simple Calendar](https://simplecalendar.info/pages/docs/using-sc/index/index.html) docs to reflect the change in location of the buttons to open Simple Calendar.
-- Updated the [Notes](https://simplecalendar.info/pages/docs/using-sc/notes/index.html) docs to reflect all the changes to the notes interface.
-- Added a new page [Notes: Adding / Editing / Removing](https://simplecalendar.info/pages/docs/using-sc/notes/adding-editing-removing.html) for detailing how to add, edit and remove notes with a section specific to the new pages functionality.
+- Updated the [Client Settings](https://simplecalendarreborn.net/pages/docs/global-configuration/settings.html#client-settings) docs to include details about the new note reminder setting.
+- Updated the [Using Simple Calendar](https://simplecalendarreborn.net/pages/docs/using-sc/index/index.html) docs to reflect the change in location of the buttons to open Simple Calendar.
+- Updated the [Notes](https://simplecalendarreborn.net/pages/docs/using-sc/notes/index.html) docs to reflect all the changes to the notes interface.
+- Added a new page [Notes: Adding / Editing / Removing](https://simplecalendarreborn.net/pages/docs/using-sc/notes/adding-editing-removing.html) for detailing how to add, edit and remove notes with a section specific to the new pages functionality.
 - Updated several images to properly reflect the changes in this update.
 
 ### API Changes
@@ -882,11 +882,11 @@ Other systems will get their own specific themes as time goes on
 To go along with the release of FoundryVTT version 10 some depreciated options within simple calendar have been removed.
 
 - `SimpleCalendar.api.MoonIcons` has been removed. Please use `SimpleCalendar.api.Icons` instead.
-- From the [Date Time Change Hook Response](https://simplecalendar.info/interfaces/SimpleCalendar.Hooks.DateChangeResponse.html) data the `day` property has been removed. Please use the options under the `date` property instead.
-- From the [Date Time Change Hook Response](https://simplecalendar.info/interfaces/SimpleCalendar.Hooks.DateChangeResponse.html) data the `month` property has been removed. Please use the options under the `date` property instead.
-- From the [Date Time Change Hook Response](https://simplecalendar.info/interfaces/SimpleCalendar.Hooks.DateChangeResponse.html) data the `season` property has been removed. Please use the options under the `date` property instead.
-- From the [Date Time Change Hook Response](https://simplecalendar.info/interfaces/SimpleCalendar.Hooks.DateChangeResponse.html) data the `time` property has been removed. Please use the options under the `date` property instead.
-- From the [Date Time Change Hook Response](https://simplecalendar.info/interfaces/SimpleCalendar.Hooks.DateChangeResponse.html) data the `year` property has been removed. Please use the options under the `date` property instead.
+- From the [Date Time Change Hook Response](https://simplecalendarreborn.net/interfaces/SimpleCalendar.Hooks.DateChangeResponse.html) data the `day` property has been removed. Please use the options under the `date` property instead.
+- From the [Date Time Change Hook Response](https://simplecalendarreborn.net/interfaces/SimpleCalendar.Hooks.DateChangeResponse.html) data the `month` property has been removed. Please use the options under the `date` property instead.
+- From the [Date Time Change Hook Response](https://simplecalendarreborn.net/interfaces/SimpleCalendar.Hooks.DateChangeResponse.html) data the `season` property has been removed. Please use the options under the `date` property instead.
+- From the [Date Time Change Hook Response](https://simplecalendarreborn.net/interfaces/SimpleCalendar.Hooks.DateChangeResponse.html) data the `time` property has been removed. Please use the options under the `date` property instead.
+- From the [Date Time Change Hook Response](https://simplecalendarreborn.net/interfaces/SimpleCalendar.Hooks.DateChangeResponse.html) data the `year` property has been removed. Please use the options under the `date` property instead.
 
 <hr/>
 
@@ -920,7 +920,7 @@ The new option can be handy in instances of pulling a single character to a new 
 
 ### API Changes
 
-- Added Simple Calendar as an [NPM package](https://www.npmjs.com/package/foundryvtt-simple-calendar) so that other projects can reference the built-in type definitions. See the [documentation](https://simplecalendar.info/pages/docs/developing-with-sc/index.html) for more details.
+- Added Simple Calendar as an [NPM package](https://www.npmjs.com/package/foundryvtt-simple-calendar) so that other projects can reference the built-in type definitions. See the [documentation](https://simplecalendarreborn.net/pages/docs/developing-with-sc/index.html) for more details.
 
 <hr/>
 
@@ -1223,14 +1223,14 @@ To go along with the large changelist to the Simple Calendar module the API has 
 
 None of these changes should be breaking to existing implementations using the API but please read over all the changes to make sure your Systems/Modules/Macros are not impacted.
 
-The documentation for the API has also moved to [https://simplecalendar.info/api/index.html](https://simplecalendar.info/modules/SimpleCalendar.html). This site will be home to all documentation around Simple Calendar but for right now it just contains the up-to-date API documentation.
+The documentation for the API has also moved to [https://simplecalendarreborn.net/api/index.html](https://simplecalendarreborn.net/modules/SimpleCalendar.html). This site will be home to all documentation around Simple Calendar but for right now it just contains the up-to-date API documentation.
 
 #### General Changes
 
-- Added a new property [`SimpleCalendar.api.Icons`](https://simplecalendar.info/enums/SimpleCalendar.api.Icons.html) that contains a list of all available icons within Simple Calendar.
+- Added a new property [`SimpleCalendar.api.Icons`](https://simplecalendarreborn.net/enums/SimpleCalendar.api.Icons.html) that contains a list of all available icons within Simple Calendar.
 - **Important**: Depreciating the property `SimpleCalendar.api.MoonIcons`. This has been replaced with the Icons property and will be removed when FoundryVTT v10 Stable has been released.
-- Updated the [`SimpleCalendar.api.formateDate()`](https://simplecalendar.info/modules/SimpleCalendar.api.html#formatDateTime) function to also take in an optional format string to format the date/time in any custom way. If no format string is provided it will return an object with the date formatted using the formats from the configuration, otherwise it will return the formatted string
-- Added a new function [`SimpleCalendar.api.runMigration()`](https://simplecalendar.info/modules/SimpleCalendar.api.html#runMigration) function that will run the migration code again.
+- Updated the [`SimpleCalendar.api.formateDate()`](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html#formatDateTime) function to also take in an optional format string to format the date/time in any custom way. If no format string is provided it will return an object with the date formatted using the formats from the configuration, otherwise it will return the formatted string
+- Added a new function [`SimpleCalendar.api.runMigration()`](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html#runMigration) function that will run the migration code again.
 
 #### Bug Fixes
 
@@ -1238,28 +1238,28 @@ The documentation for the API has also moved to [https://simplecalendar.info/api
 
 #### Multi Calendar Support
 
-- Added a function [`SimpleCalendar.api.getCurrentCalendar()`](https://simplecalendar.info/modules/SimpleCalendar.api.html#getCurrentCalendar) that returns the configuration data for the current active calendar.
-- Added a new function [`SimpleCalendar.api.getAllCalendars()`](https://simplecalendar.info/modules/SimpleCalendar.api.html#getAllCalendars) that returns a list of all calendars set up in Simple Calendar. (This does not include any predefined calendars)
+- Added a function [`SimpleCalendar.api.getCurrentCalendar()`](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html#getCurrentCalendar) that returns the configuration data for the current active calendar.
+- Added a new function [`SimpleCalendar.api.getAllCalendars()`](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html#getAllCalendars) that returns a list of all calendars set up in Simple Calendar. (This does not include any predefined calendars)
 - Updated all API functions so that they can now take an additional optional parameter `calendarId` (where it made sense).
   - This parameter can be used to target a specific calendar for the API function to update/get data from. If the parameter is not specified then the current active calendar will be used.
   - This means that current systems/modules/macros that use the API will not need to update their function calls unless they want to add the ability to target calendars that are not the one currently being used.
 
 #### Note Support
 
-- Added a function [`SimpleCalendar.api.getNotes()`](https://simplecalendar.info/modules/SimpleCalendar.api.html#getNotes) that returns all notes that the current player can see. Optional parameter to specify the ID of the calendar to get the notes from, defaults to the active calendar.
-- Added a function [`SimpleCalendar.api.getNotesForDay(year, month, day)`](https://simplecalendar.info/modules/SimpleCalendar.api.html#getNotesForDay) that returns all notes that the current player can see for the date specified. . Optional parameter to specify the ID of the calendar to get the notes from, defaults to the active calendar.
-- Added a function [`SimpleCalendar.api.addNote()`](https://simplecalendar.info/modules/SimpleCalendar.api.html#addNote) that will add a new note of the specified content to the specified date of the specified calendar. This function will return the newly created JournalEntry that contains the notes' data.
+- Added a function [`SimpleCalendar.api.getNotes()`](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html#getNotes) that returns all notes that the current player can see. Optional parameter to specify the ID of the calendar to get the notes from, defaults to the active calendar.
+- Added a function [`SimpleCalendar.api.getNotesForDay(year, month, day)`](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html#getNotesForDay) that returns all notes that the current player can see for the date specified. . Optional parameter to specify the ID of the calendar to get the notes from, defaults to the active calendar.
+- Added a function [`SimpleCalendar.api.addNote()`](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html#addNote) that will add a new note of the specified content to the specified date of the specified calendar. This function will return the newly created JournalEntry that contains the notes' data.
 
 #### Handlebar Helpers
 
 - Removed 2 Handlebar helpers, day-has-note and day-moon-phase. These were used internally and are no longer required.
-- Added a new Handlebar helper [sc-full-calendar](https://simplecalendar.info/enums/HandlebarHelpers.html#sc_full_calendar) that can be used to render a full calendar view of the current date or passed in date.
+- Added a new Handlebar helper [sc-full-calendar](https://simplecalendarreborn.net/enums/HandlebarHelpers.html#sc_full_calendar) that can be used to render a full calendar view of the current date or passed in date.
   - These calendars support basic interactivity, change which month is being viewed and selecting a day when it is clicked, with the option to pass in your own function to extend this functionality.
   - These calendars can use the default Simple Calendar styling or be customized.
-- Added a new function [`SimpleCalendar.api.activateFullCalendarListeners()`](https://simplecalendar.info/modules/SimpleCalendar.api.html#activateFullCalendarListeners) that is used to activate all the basic interactivity for calendars rendered with the [sc-full-calendar](https://simplecalendar.info/api/enums/HandlebarHelpers.html#sc_full_calendar) Handlebar helper.
+- Added a new function [`SimpleCalendar.api.activateFullCalendarListeners()`](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html#activateFullCalendarListeners) that is used to activate all the basic interactivity for calendars rendered with the [sc-full-calendar](https://simplecalendarreborn.net/api/enums/HandlebarHelpers.html#sc_full_calendar) Handlebar helper.
 #### Removal of Depreciated Items
 
-- With the release of Foundry v9 depreciated properties from the [Date Object](https://simplecalendar.info/interfaces/SimpleCalendar.DateData.html) have been removed:
+- With the release of Foundry v9 depreciated properties from the [Date Object](https://simplecalendarreborn.net/interfaces/SimpleCalendar.DateData.html) have been removed:
   - _**dayDisplay**_: Please use display.day instead.
   - _**monthName**_: Please use display.monthName instead.
   - **_yearName_**: Please use display.yearName instead.
@@ -1369,7 +1369,7 @@ You can now customize how the date and time is displayed in Simple Calendar with
     - _**Date Selector**_: The time portion of the Date Selector text box as well as the time selection text boxes.
     - _**Notes**_: The Date/Time pill in the note list and in the note display will use this format to display the time portion.
   - **Month/Year Format**: This indicates how the month and year are displayed at the top of the calendar in the Full View and the Date Selector.
-- Above the new date format settings is a table that contains a list of all the tokens that can be used in the formats. This table is large so by default it is collapsed, but clicking the header will expand it. A detailed list of all the tokens is also available in the [configuration documentation](https://simplecalendar.info/pages/docs/calendar-configuration/display-options.html#datetime-formats).
+- Above the new date format settings is a table that contains a list of all the tokens that can be used in the formats. This table is large so by default it is collapsed, but clicking the header will expand it. A detailed list of all the tokens is also available in the [configuration documentation](https://simplecalendarreborn.net/pages/docs/calendar-configuration/display-options.html#datetime-formats).
 
 ### Quality of Life Improvements
 
@@ -1388,9 +1388,9 @@ You can now customize how the date and time is displayed in Simple Calendar with
 
 ### API Changes
 
-- Added a `date` property to the [Date Display Object](https://simplecalendar.info/interfaces/SimpleCalendar.DateDisplayData.html) that contains the formatted date string for the date. This object is part of the return from the `SimpleCalendar.api.timestampToDate` function.
-- Updated the `time` property of the [Date Display Object](https://simplecalendar.info/interfaces/SimpleCalendar.DateDisplayData.html) so that it contains the formatted time string for the date.
-- Added a new function to the API, `SimpleCalendar.api.formatDateTime(date)`. This takes in a DateTime object and will format it to the currently configured date and time formats. Check out the [API Docs](https://simplecalendar.info/modules/SimpleCalendar.api.html#formatDateTime) for more details!
+- Added a `date` property to the [Date Display Object](https://simplecalendarreborn.net/interfaces/SimpleCalendar.DateDisplayData.html) that contains the formatted date string for the date. This object is part of the return from the `SimpleCalendar.api.timestampToDate` function.
+- Updated the `time` property of the [Date Display Object](https://simplecalendarreborn.net/interfaces/SimpleCalendar.DateDisplayData.html) so that it contains the formatted time string for the date.
+- Added a new function to the API, `SimpleCalendar.api.formatDateTime(date)`. This takes in a DateTime object and will format it to the currently configured date and time formats. Check out the [API Docs](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html#formatDateTime) for more details!
 - Added a new function to the API, `SimpleCalendar.api.getAllMonths()`. This function will return configuration details for all months in the calendar.
 - Added a new function to the API, `SimpleCalendar.api.getAllMoons()`. This function will return configuration details for all moons of the calendar.
 - Added a new function to the API, `SimpleCalendar.api.getAllWeekdays()`. This function will return configuration details for all weekdays in the calendar.
@@ -1496,16 +1496,16 @@ If any bugs do crop up in your game I am sorry and please let me know with a bug
 ![](https://img.shields.io/badge/release%20date-August%2011%2C%202021-blue)
 ![GitHub release](https://img.shields.io/github/downloads-pre/vigoren/foundryvtt-simple-calendar/v1.3.28/module.zip)
 
-- Updated the [DateTimeChange hook](https://simplecalendar.info/modules/SimpleCalendar.Hooks.html#DateTimeChange) to have a new property in its returned value called "date". This property contains the same contents as the [API timestampToDate function](https://simplecalendar.info/modules/SimpleCalendar.api.html#timestampToDate) with the current timestamp passed in. This is to have the exact same data available in the hook as the API function. As a result some existing properties will be removed as stated below:
+- Updated the [DateTimeChange hook](https://simplecalendarreborn.net/modules/SimpleCalendar.Hooks.html#DateTimeChange) to have a new property in its returned value called "date". This property contains the same contents as the [API timestampToDate function](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html#timestampToDate) with the current timestamp passed in. This is to have the exact same data available in the hook as the API function. As a result some existing properties will be removed as stated below:
   - **Future Breaking**: The property "year" will be removed when Foundry v10 Stable is released. Please use the year information from the new "date" property.
   - **Future Breaking**: The property "month" will be removed when Foundry v10 Stable is released. Please use the month information from the new "date" property.
   - **Future Breaking**: The property "day" will be removed when Foundry v10 Stable is released. Please use the day information from the new "date" property.
   - **Future Breaking**: The property "time" will be removed when Foundry v10 Stable is released. Please use the time information from the new "date" property.
   - **Future Breaking**: The property "season" will be removed when Foundry v10 Stable is released. Please use the season information from the new "date" property.
-- Updated the [Clock Start/Stop hook](https://simplecalendar.info/modules/SimpleCalendar.Hooks.html#ClockStartStop) so that it uses the same function as the [API clockStatus function](https://simplecalendar.info/modules/SimpleCalendar.api.html#clockStatus). No change to returned values, this is to keep consistency between those functions.
-- Updated the [PrimaryGM hook](https://simplecalendar.info/modules/SimpleCalendar.Hooks.html#PrimaryGM) so that it uses the same function as the [API isPrimaryGM function](https://simplecalendar.info/modules/SimpleCalendar.api.html#isPrimaryGM). No change to returned values, this is to keep consistency between those functions.
+- Updated the [Clock Start/Stop hook](https://simplecalendarreborn.net/modules/SimpleCalendar.Hooks.html#ClockStartStop) so that it uses the same function as the [API clockStatus function](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html#clockStatus). No change to returned values, this is to keep consistency between those functions.
+- Updated the [PrimaryGM hook](https://simplecalendarreborn.net/modules/SimpleCalendar.Hooks.html#PrimaryGM) so that it uses the same function as the [API isPrimaryGM function](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html#isPrimaryGM). No change to returned values, this is to keep consistency between those functions.
 - Changed when the DateTimeChange hook is fired to include every tick of the clock.
-- Added the "isLeapYear" property to the [Date Object](https://simplecalendar.info/interfaces/SimpleCalendar.DateData.html) returned by [timeStampToDate API function](https://simplecalendar.info/modules/SimpleCalendar.api.html#timestampToDate) that indicates if the date falls on a leap year or not.
+- Added the "isLeapYear" property to the [Date Object](https://simplecalendarreborn.net/interfaces/SimpleCalendar.DateData.html) returned by [timeStampToDate API function](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html#timestampToDate) that indicates if the date falls on a leap year or not.
 
 <hr/>
 
@@ -1651,7 +1651,7 @@ This update is mainly around notes and improving the experience around adding, e
 - Added a function SimpleCalendar.api.getCurrentSeason() that returns details about the season for the current date.
 - Added a function SimpleCalendar.api.getAllSeasons() that returns details for every configured season in Simple Calendar.
 - Fixed a bug when importing from Calendar/weather where the hours per day would end up being undefined.
-- Added the ability to use the new Date Selector input type to other modules/systems through Simple Calendars API. [Read more here!](https://simplecalendar.info/modules/SimpleCalendar.api.html)
+- Added the ability to use the new Date Selector input type to other modules/systems through Simple Calendars API. [Read more here!](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html)
 
 <hr/>
 
@@ -1759,7 +1759,7 @@ The clock now functions as follows:
 - The time will now update every second for all players.
 - Every 10 seconds all players time will sync with the primary GM's time. This is to mitigate any time "wandering" that may happen.
 - The time can still be manually updated by those with permission while the clock is running.
-- For every second that passes, the time updates by the amount in the configuration setting [Game Seconds Per Real Life Seconds](https://simplecalendar.info/pages/docs/calendar-configuration/time-settings.html) under the time seconds.
+- For every second that passes, the time updates by the amount in the configuration setting [Game Seconds Per Real Life Seconds](https://simplecalendarreborn.net/pages/docs/calendar-configuration/time-settings.html) under the time seconds.
 - If the GM disconnects while the clock is running, when they reconnect all the players clocks will stop running and be updated to the time when the GM disconnected.
 
 It is important to note that while the clock does its best to keep everyone on the same time if a player or GM has a high latency to the server (greater than one to two seconds) then the time may be visually off between the GM and the players. The Primary GM's time is considered correct and all other players will use that time.
@@ -1798,7 +1798,7 @@ It is important to note that while the clock does its best to keep everyone on t
 
 ### New API
 
-- Added a new API function [chooseRandomDate](https://simplecalendar.info/modules/SimpleCalendar.api.html#chooseRandomDate) that will choose a random date on the calendar or between a passed in start and end date.
+- Added a new API function [chooseRandomDate](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html#chooseRandomDate) that will choose a random date on the calendar or between a passed in start and end date.
 
 <hr/>
 
@@ -1813,7 +1813,7 @@ An API interface to Simple Calendar has been added so that other modules can hav
 
 All the existing macro functions have been moved into this new API interface. The existing functions remain with a depreciation warning, and they will be removed in a later update.
 
-Check out the new [API documentation](https://simplecalendar.info/modules/SimpleCalendar.api.html) for all the additions and changes.
+Check out the new [API documentation](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html) for all the additions and changes.
 
 
 ### Bug Fixes
@@ -2003,15 +2003,15 @@ I am happy to say that Simple Calendar has been translated into German by [Maste
 
 ### Macros
 
-- Added a new macro for setting a specific date/time for the calendar, check out the [documentation](https://simplecalendar.info/modules/SimpleCalendar.api.html#setDate) for how to use it.
-- Added a new macro for changing the current date/time by a passed in amount. Check out the [documentation](https://simplecalendar.info/modules/SimpleCalendar.api.html#changeDate) for how to use it.
+- Added a new macro for setting a specific date/time for the calendar, check out the [documentation](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html#setDate) for how to use it.
+- Added a new macro for changing the current date/time by a passed in amount. Check out the [documentation](https://simplecalendarreborn.net/modules/SimpleCalendar.api.html#changeDate) for how to use it.
 
 
 ### Hooks
 
 Simple Calendar will now emit certain hooks that other modules/code can listen for.
 
-- Added a hook that is fired every time the current date is changed and contains the information for the new date. Check out the [documentation](https://simplecalendar.info/modules/SimpleCalendar.Hooks.html#DateTimeChange) for more details.
+- Added a hook that is fired every time the current date is changed and contains the information for the new date. Check out the [documentation](https://simplecalendarreborn.net/modules/SimpleCalendar.Hooks.html#DateTimeChange) for more details.
 
 ### Quality of Life Improvements
 
@@ -2078,13 +2078,13 @@ There are 4 different options on how to tie into the game world time to achieve 
 | Third Party Module | This will instruct Simple Calendar to just display the Time in the game world time. All date changing controls are disabled and the changing of time relies 100% on another module. This setting is ideal if you are just want to use Simple Calenar to display the date in calendar form and/or take advantage of the notes. | Does not update the game world time.                             | Updates it's display everytime the game world time is changed, following what the other modules say the time is.     |
 | Mixed              | This option is a blend of the self and third party options. Simple calendar can change the game world time and and changes made by other modules are reflected in Simple Calendar. This setting is ideal if you want to use Simple Calendar and another module to change the game time.                                       | Will update the game world time                                  | Will update it's own time based on changes to the game world time, following what other modules say the time is.     |
 
-You can check out the [configuration](https://simplecalendar.info/pages/docs/calendar-configuration/general-settings.html#game-world-time-integration) section for more details.
+You can check out the [configuration](https://simplecalendarreborn.net/pages/docs/calendar-configuration/general-settings.html#game-world-time-integration) section for more details.
 
 #### Simple Calendar Clock
 
 There is now a time of day clock that displays below the calendar to show the current time of the current day.
 The GM can manually control this clock if they wish, or they can start the clock and have it update as real time passes.
-The clock does also update as combat rounds pass. For more details on the clock check out [here](https://simplecalendar.info/pages/docs/using-sc/index/index.html#clock).
+The clock does also update as combat rounds pass. For more details on the clock check out [here](https://simplecalendarreborn.net/pages/docs/using-sc/index/index.html#clock).
 
 #### Configuration
 
@@ -2121,7 +2121,7 @@ I think this gives the best approach for defining seasons and allowing customiza
 ### Moons
 
 Simple Calendar now supports the addition of moons. Any number of moons can be added to a calendar, and they can be customized to meet your needs.
-For details on how to add and customize a moon please check out the [configuration documentation](https://simplecalendar.info/pages/docs/calendar-configuration/moon-settings.html).
+For details on how to add and customize a moon please check out the [configuration documentation](https://simplecalendarreborn.net/pages/docs/calendar-configuration/moon-settings.html).
 
 The calendar now also displays the important (single day) moon phases on the calendar as well as the moon phase for the current day and selected day.
 

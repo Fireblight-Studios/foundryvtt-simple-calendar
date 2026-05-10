@@ -40,7 +40,7 @@
 	"FSC.Configuration.CombatPauseRule.Active": "Pausar Apenas na Cena Ativa",
 	"FSC.Configuration.CombatPauseRule.Current": "Pausar na Cena que o MJ Estiver Atualmente Vendo",
 	"FSC.Configuration.Display.DateTimeFormat": "Formato Data/Hora",
-	"FSC.Configuration.Display.Description": "Essa configuração permite alterar como a data e hora são exibidas no calendário selecionado. Para mais detalhes sobre a configuração dos formatos de data, confira a <a target=\"_blank\" href=\"https://simplecalendar.info/docs/calendar-configuration/display-options#datetime-formatting\">documentação</a> ou expanda a tabela abaixo.",
+	"FSC.Configuration.Display.Description": "Essa configuração permite alterar como a data e hora são exibidas no calendário selecionado. Para mais detalhes sobre a configuração dos formatos de data, confira a <a target=\"_blank\" href=\"https://simplecalendarreborn.net/docs/calendar-configuration/display-options#datetime-formatting\">documentação</a> ou expanda a tabela abaixo.",
 	"FSC.Configuration.Display.Compact": "Opções do Modo Compacto",
 	"FSC.Configuration.Display.CompactControls.Title": "Layout Data/Hora Modo Compato",
 	"FSC.Configuration.Display.CompactControls.Description": "Escolha o layout para os botões usados para mudar a data/hora do calendário no Modo Compacto.",
