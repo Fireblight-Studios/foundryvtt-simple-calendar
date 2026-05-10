@@ -1,0 +1,9 @@
+node_modules
+build
+.git
+dist
+.idea
+.junie
+.github
+.DS_Store
+npm-debug.log
