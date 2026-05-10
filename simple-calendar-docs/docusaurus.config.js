@@ -193,7 +193,7 @@ const config = {
             // Replace with your project's social card
             image: "img/logo.png",
             navbar: {
-                title: "Simple Calendar",
+                title: "Simple Calendar Reborn",
                 logo: {
                     alt: "Simple Calendar Logo",
                     src: "img/logo.svg"
@@ -274,16 +274,8 @@ const config = {
                                 href: "https://discord.gg/foundryvtt"
                             },
                             {
-                                label: "Foundry Hub",
-                                href: "https://www.foundryvtt-hub.com/package/foundryvtt-simple-calendar/"
-                            },
-                            {
                                 label: "GitHub",
                                 href: "https://github.com/Fireblight-Studios/foundryvtt-simple-calendar"
-                            },
-                            {
-                                label: "Foundry Hub - Weblate",
-                                href: "https://weblate.foundryvtt-hub.com/projects/simple-calendar/"
                             }
                         ]
                     },
@@ -291,20 +283,16 @@ const config = {
                         title: "Support",
                         items: [
                             {
-                                html: '<p class="footer-text">Simple Calendar is free to use by anyone! Below are options for those who want to donate to the development or support the developer.</p>'
-                            },
-                            {
-                                label: "Patreon",
-                                href: "https://www.patreon.com/vigorator"
+                                html: '<p class="footer-text">Simple Calendar Reborn is free to use by anyone! Below are options for those who want to donate to the development or support the developer.</p>'
                             },
                             {
                                 label: "Ko-fi",
-                                href: "https://ko-fi.com/vigorator"
+                                href: "https://ko-fi.com/arctis_fireblight"
                             }
                         ]
                     }
                 ],
-                copyright: `Copyright © ${new Date().getFullYear()} Simple Calendar. Built with Docusaurus.`
+                copyright: `Simple Calendar Reborn © 2025-${new Date().getFullYear()} Arctis Fireblight. Originally created by Dean Vigoren. Built with Docusaurus.`
             },
             prism: {
                 theme: lightTheme,

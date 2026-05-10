@@ -52,17 +52,18 @@ export default function Home() {
   return (
     <Layout
       title={`${siteConfig.title}`}
-      description="Documentation for how to configure, use and develop with the Simple Calendar module for FoundryVTT!">
+      description="Documentation for how to configure, use and develop with the Simple Calendar Reborn module for FoundryVTT!">
       <HomepageHeader />
       <main>
           <section>
               <div className="container">
                   <div className="row">
                       <div className="col">
-                          <h2>Create The Perfect Calendar</h2>
-                          <p>Simple Calendar is the ultimate timekeeping module for <a href="https://foundryvtt.com/" target="_blank">FoundryVTT</a> that works with all game systems!</p>
-                          <p>It comes prepackaged with many <a href="docs/calendar-configuration/quick-setup">preset calendars</a> to get your world up and running quickly. Or if you have a completely custom-built calendering system for your world, Simple Calendar can handle that as well!</p>
+                          <h2>About</h2>
+                          <p>Simple Calendar Reborn is a fork of the original Simple Calendar module for <a href="https://foundryvtt.com/" target="_blank">FoundryVTT</a> that has been modernized to work with current versions of FoundryVTT, and all game systems.</p>
+                          <p>It comes prepackaged with many <a href="docs/calendar-configuration/quick-setup">preset calendars</a> to get your world up and running quickly. Or if you have a completely custom-built calendering system for your world, Simple Calendar Reborn can handle that as well!</p>
                           <p>Get started and create the perfect calendar to enrich your world for your players!</p>
+                          <p>Whether you were a fan of the original Simple Calendar module, or are new to FoundryVTT, Simple Calendar Reborn is the perfect module for you!</p>
                       </div>
                   </div>
                   <div className="row">
@@ -106,7 +107,7 @@ export default function Home() {
                               <ul>
                                   <li>Determine how many <a href="docs/calendar-configuration/season-settings">seasons</a> there are in your world.</li>
                                   <li><a href="docs/calendar-configuration/season-settings">Customize</a> their names, when the season starts, and assign an icon and color to make each season unique.</li>
-                                  <li>Specify Sunrise and Sunset times for each season and Simple Calendar will do the math to gradually shift those times between season!</li>
+                                  <li>Specify Sunrise and Sunset times for each season and Simple Calendar Reborn will do the math to gradually shift those times between season!</li>
                               </ul>
                           </FeatureBlock>
                       </div>
@@ -153,7 +154,7 @@ export default function Home() {
                   <div className="row">
                       <div className="col">
                           <h2 className="anchor" id="get-started">Get Started<a href="#get-started" className="hash-link" aria-label="Direct link to Get Started" title="Direct link to Get Started">​</a></h2>
-                          <p>You can have Simple Calendar up and running in just a few minutes! Just follow the steps below to quickly get a calendar for your game set up and your players using it.</p>
+                          <p>You can have Simple Calendar Reborn up and running in just a few minutes! Just follow the steps below to quickly get a calendar for your game set up and your players using it.</p>
 
                       </div>
                   </div>
@@ -165,7 +166,7 @@ export default function Home() {
                                   <Download />
                               </div>
                               <div className={styles.cardBody}>
-                                  <p><a href="/docs/installing">Install the module</a> following one of the methods, launch the world you want to use Simple Calendar in and <a href="https://foundryvtt.com/article/modules/">activate the module</a>.</p>
+                                  <p><a href="/docs/installing">Install the module</a> following one of the methods, launch the world you want to use Simple Calendar Reborn in and <a href="https://foundryvtt.com/article/modules/">activate the module</a>.</p>
                               </div>
                           </div>
                       </div>
@@ -176,7 +177,7 @@ export default function Home() {
                                   <Gear />
                               </div>
                               <div className={styles.cardBody}>
-                                  <p><a href="/docs/opening-configuration">Open the Simple Calendar configuration</a> dialog and navigate to the <a href="/docs/calendar-configuration/quick-setup">Quick Setup</a> tab.</p>
+                                  <p><a href="/docs/opening-configuration">Open the Simple Calendar Reborn configuration</a> dialog and navigate to the <a href="/docs/calendar-configuration/quick-setup">Quick Setup</a> tab.</p>
                               </div>
                           </div>
                       </div>
