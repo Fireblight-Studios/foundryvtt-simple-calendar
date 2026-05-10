@@ -94,7 +94,7 @@ Adding a new theme to the Simple Calendar codebase is straight forward, just fol
 ```
 - You are now ready to start customizing your theme!
 
-All the properties in the sass variable `$theme` correlate with a CSS variable that is added to the Simple Calendar container and used by the rest of the CSS to style the module. Be sure to check out the [Theming Simple Calendar](https://simplecalendar.info/pages/docs/developing-with-sc/index/theming.html) to see what each CSS variable does!
+All the properties in the sass variable `$theme` correlate with a CSS variable that is added to the Simple Calendar container and used by the rest of the CSS to style the module. Be sure to check out the [Theming Simple Calendar](https://simplecalendarreborn.net/pages/docs/developing-with-sc/index/theming.html) to see what each CSS variable does!
 
 You can further customize the theme by overriding specific SCSS classes to the bottom of the file. You can see examples of this in the wfrp4e.scss system specific theme file.
 

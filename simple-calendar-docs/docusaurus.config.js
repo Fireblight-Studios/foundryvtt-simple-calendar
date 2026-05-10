@@ -8,12 +8,12 @@ const darkTheme = themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-    title: "Simple Calendar",
+    title: "Simple Calendar Reborn",
     tagline: "Your Calendar, Your Way",
     favicon: "img/logo.svg",
 
     // Set the production url of your site here
-    url: "https://simplecalendar.info/",
+    url: "https://simplecalendarreborn.net/",
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: "/",
