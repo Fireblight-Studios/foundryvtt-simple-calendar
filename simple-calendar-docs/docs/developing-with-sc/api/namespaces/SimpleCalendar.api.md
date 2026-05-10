@@ -450,7 +450,7 @@ ___
 
 ### formatDateTime
 
-▸ **formatDateTime**(`date`, `format?`, `calendarId?`): `string` \| { `date`: `string` ; `time`: `string`  }
+▸ **formatDateTime**(`date`, `format?`, `calendarId?`): `string` \| \{ `date`: `string` ; `time`: `string`  \}
 
 Converts the passed in date/time into formatted date and time strings that match the configured date and time formats or the passed in format string.
 
@@ -488,7 +488,7 @@ SimpleCalendar.api.formatDateTime({year: 2021, month: 111, day: 224, hour: 44, m
 
 #### Returns
 
-`string` \| { `date`: `string` ; `time`: `string`  }
+`string` \| \{ `date`: `string` ; `time`: `string`  \}
 
 If no format string is provided an object with the date and time formatted strings, as set in the configuration, will be returned. If a format is provided then a formatted string will be returned.
 
@@ -496,7 +496,7 @@ ___
 
 ### formatTimestamp
 
-▸ **formatTimestamp**(`timestamp`, `format?`, `calendarId?`): `string` \| { `date`: `string` ; `time`: `string`  }
+▸ **formatTimestamp**(`timestamp`, `format?`, `calendarId?`): `string` \| \{ `date`: `string` ; `time`: `string`  }
 
 Converts the passed in timestamp into formatted date and time strings that match the configured date and time formats or the passed in format string.
 
@@ -524,7 +524,7 @@ SimpleCalendar.api.formatTimestamp(1640434394,"DD/MM/YYYY HH:mm:ss A");
 
 #### Returns
 
-`string` \| { `date`: `string` ; `time`: `string`  }
+`string` \| \{ `date`: `string` ; `time`: `string`  }
 
 If no format string is provided an object with the date and time formatted strings, as set in the configuration, will be returned. If a format is provided then a formatted string will be returned.
 

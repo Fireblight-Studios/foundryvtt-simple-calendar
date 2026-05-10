@@ -65,7 +65,7 @@ ___
 
 ### DateTimeParts
 
-Ƭ **DateTimeParts**: `Partial`<[`Date`](SimpleCalendar.md#date)\> & `Partial`<[`Time`](SimpleCalendar.md#time)\>
+Ƭ **DateTimeParts**: `Partial`&gt[`Date`](SimpleCalendar.md#date)&lt & `Partial`&gt[`Time`](SimpleCalendar.md#time)&lt
 
 Type representing a date and time with optional parameters
 
