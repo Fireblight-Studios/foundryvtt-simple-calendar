@@ -15,10 +15,10 @@
     "build:digitalocean": "npm install --production=false && npm run build && npm ci"
   },
   "dependencies": {
-    "@docusaurus/core": "3.3.2",
-    "@docusaurus/plugin-client-redirects": "^3.3.2",
-    "@docusaurus/plugin-google-gtag": "^3.3.2",
-    "@docusaurus/preset-classic": "3.3.2",
+    "@docusaurus/core": "^3.10.1",
+    "@docusaurus/plugin-client-redirects": "^3.10.1",
+    "@docusaurus/plugin-google-gtag": "^3.10.1",
+    "@docusaurus/preset-classic": "^3.10.1",
     "@mdx-js/react": "^3.0.1",
     "clsx": "^2.1.1",
     "prism-react-renderer": "^2.3.1",
@@ -26,7 +26,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.3.2",
+    "@docusaurus/module-type-aliases": "^3.10.1",
     "docusaurus-plugin-typedoc": "^1.0.1",
     "typedoc": "^0.25.13",
     "typedoc-plugin-markdown": "^4.0.2"
