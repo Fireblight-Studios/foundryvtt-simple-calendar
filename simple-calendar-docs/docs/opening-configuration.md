@@ -1,10 +1,10 @@
 # Opening The Configuration
 
-There are two ways to open up Simple Calendars configuration dialog
+There are two ways to open up Simple Calendar Reborn's configuration dialog
 
 ## Calendar View
 
-In the [calendar view](using-sc/calendar-view) in the [action buttons](using-sc/calendar-view#action-buttons) section there is a button for opening the configuration
+In the [calendar view](using-sc/calendar-view) in the [action buttons](using-sc/calendar-view#action-buttons) section, there is a button for opening the configuration
 
 ![](images/sc-open-config.png)
 
