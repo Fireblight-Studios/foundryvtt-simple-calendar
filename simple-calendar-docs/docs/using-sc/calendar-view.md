@@ -1,6 +1,6 @@
 # Calendar View
 
-The calendar view is the main way of interacting with Simple Calendar. The image below breaks the view into 3 main sections which will be further broken down individually. This will give you the best understanding of how to use Simple Calendar!
+The calendar view is the main way of interacting with Simple Calendar Reborn. The image below breaks the view into 3 main sections which will be further broken down individually. This will give you the best understanding of how to use Simple Calendar Reborn!
 
 ![](../images/main-app-overview.png)
 
@@ -116,7 +116,7 @@ This text can be customized by the **Gamemaster** using the [Time Format display
 
 ### Real Time Clock
 
-Simple Calendar comes with the option for the Gamemaster to start a real time clock. This clock will advance the game time by a [configurable amount](../calendar-configuration/time-settings.md#clock-settings) for each second that passes in the real world. This is useful to keep games running and the suspense high.
+Simple Calendar Reborn comes with the option for the Gamemaster to start a real time clock. This clock will advance the game time by a [configurable amount](../calendar-configuration/time-settings.md#clock-settings) for each second that passes in the real world. This is useful to keep games running and the suspense high.
 
 #### Clock Icon
 
@@ -134,7 +134,7 @@ This icon represents the current state of the real time clock:
 
 ### Calendars
 
-This button will open up the calendar panel that will show all calendars currently configured in Simple Calendar. More details on this panel under the [switching calendars documentation](switching-calendars.md).
+This button will open up the calendar panel that will show all calendars currently configured in Simple Calendar Reborn. More details on this panel under the [switching calendars documentation](switching-calendars.md).
 
 :::info
 This button will only display if there are **2 or more** [calendars configured](../calendar-configuration/add-remove-switch-calendar). 

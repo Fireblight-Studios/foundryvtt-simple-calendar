@@ -1,6 +1,6 @@
 # Changing the Date and Time
 
-If you are able to change the date and time within Simple Calendar then you will see some additional controls when viewing the interface.
+If you are able to change the date and time within Simple Calendar Reborn then you will see some additional controls when viewing the interface.
 
 These controls appear in both the full and compact versions of the calendar display.
 
@@ -11,7 +11,7 @@ Users who can change the date and time are:
 
 ## Calendar View
 
-The calendar view will show several ways of changing the date and time within Simple Calendar
+The calendar view will show several ways of changing the date and time within Simple Calendar Reborn.
 
 ![](../images/change-date-calendar.png)
 
@@ -33,9 +33,9 @@ Example: If the current time is 8:00am, pressing the midday button will advance 
 
 The time that these buttons represent are determined as follows:
 
-- **Dawn**: Dawn is based on the sunrise time set for the current season. Simple Calendar will attempt to gradually change this time to meet the sunrise time of the next season.
+- **Dawn**: Dawn is based on the sunrise time set for the current season. Simple Calendar Reborn will attempt to gradually change this time to meet the sunrise time of the next season.
 - **Midday**: This is always the half-way time of the day. It takes the number of hours in a day and divides by 2 to determine the midday time.
-- **Dusk**: Dusk is based on the sunset time set for the current season. Simple Calendar will attempt to gradually change this time to meet the sunset time of the next season.
+- **Dusk**: Dusk is based on the sunset time set for the current season. Simple Calendar Reborn will attempt to gradually change this time to meet the sunset time of the next season.
 - **Midnight**: Midnight is always set to a time of 0 hours, 0 minutes and 0 seconds, the very beginning of a day.
 
 :::caution Important

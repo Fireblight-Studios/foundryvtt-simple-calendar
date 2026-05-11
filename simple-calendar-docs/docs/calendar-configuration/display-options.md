@@ -6,12 +6,12 @@ This section is used to configure how different aspects of Simple Calendar are d
 
 ![](../images/calendar-display-options.png)
 
-A date time format is text containing special tokens. These tokens are replaced with the corresponding date/time information to create a finalized display of that date and time. Below is a list of the different tokens available to use in Simple Calendar and what they do.
+A date time format is text containing special tokens. These tokens are replaced with the corresponding date/time information to create a finalized display of that date and time. Below is a list of the different tokens available to use in Simple Calendar Reborn and what they do.
 
 | Setting                       | Description                                                                                                                          | Default            |
 |-------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|--------------------|
-| Date Format                   | This format text is used when displaying a date anywhere in Simple Calendar.                                                         | MMMM DD, YYYY      |
-| Time Format                   | This format text is used when displaying a time anywhere in Simple Calendar.                                                         | HH:mm:ss           |
+| Date Format                   | This format text is used when displaying a date anywhere in Simple Calendar Reborn.                                                  | MMMM DD, YYYY      |
+| Time Format                   | This format text is used when displaying a time anywhere in Simple Calendar Reborn.                                                  | HH:mm:ss           |
 | Month/Year Format             | This format text is used when displaying just the month and year that appears at the top of a calendar view, above the list of days. | MMMM YAYYYYYZ      |
 | Chat Message Timestamp Format | This format text is used when displaying text for a chat messages timestamp.                                                         | MMM DD, YYYY HH:mm |
 

@@ -2,7 +2,7 @@
 
 ## Add a New Calendar
 
-Adding a new calendar to Simple Calendar is easy, just follow these steps:
+Adding a new calendar to Simple Calendar Reborn is easy, just follow these steps:
 
 1. Click on the calendar configuration header, this will show a list of configured calendars and options.
 ![](../images/calendar-add-header.png)
@@ -14,20 +14,20 @@ Adding a new calendar to Simple Calendar is easy, just follow these steps:
 
 ## Remove a Calendar
 
-Removing a calendar from Simple Calendar is easy, just follow these steps:
+Removing a calendar from Simple Calendar Reborn is easy, just follow these steps:
 
 1. Click on the calendar configuration header, this will show a list of configured calendar and options.
 ![](../images/calendar-remove.png)
 2. Click on the delete button next to the calendar name.
-3. A dialog will appear asking if you are certain you want to remove the calendar, clicking the confirm button will then remove the calendar from Simple Calendar.
+3. A dialog will appear asking if you are certain you want to remove the calendar, clicking the confirm button will then remove the calendar from Simple Calendar Reborn.
 
 :::caution Important
-The default calendar can not be removed as Simple Calendar requires at least 1 calendar to function. It can be customized, however.
+The default calendar can not be removed as Simple Calendar Reborn requires at least 1 calendar to function. It can be customized, however.
 :::
 
 ## Switch Calendars
 
-Switching between calendar configurations in the Simple Calendar configuration dialog is easy, just follow these steps:
+Switching between calendar configurations in the Simple Calendar Reborn configuration dialog is easy, just follow these steps:
 
 - Click on the calendar configuration header, this will show a list of configured calendar and options. 
 - Click on the name of the calendar you want to view the configuration for.

@@ -22,7 +22,7 @@ This setting is used to show the time clock below the calendar or to hide it. No
 
 ### Game Seconds Per Real Life Seconds
 
-This is used to determine how quickly game time advances when running the Simple Calendar clock. With a value of 1, for every real life second one second passes in the game. With a value of 2 for every real life second two seconds pass in game. This does support decimals for more specific control.
+This is used to determine how quickly game time advances when running the Simple Calendar Reborn clock. With a value of 1, for every real life second one second passes in the game. With a value of 2 for every real life second two seconds pass in game. This does support decimals for more specific control.
 
 ### Update Frequency
 

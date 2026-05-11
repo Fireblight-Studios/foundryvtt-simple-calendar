@@ -2,7 +2,7 @@
 
 ![](../../images/search.png)
 
-Searching notes is easy in Simple Calendar, clicking the main search button, entering your search term in the text box then pressing enter or hitting the search button will show you the results! There are some details to take note of though.
+Searching notes is easy in Simple Calendar Reborn, clicking the main search button, entering your search term in the text box then pressing enter or hitting the search button will show you the results! There are some details to take note of though.
 
 ## Searching
 

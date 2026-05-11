@@ -18,7 +18,7 @@ The month and day for when the season starts. This field uses a date selector to
 
 The time of day for the starting date of the season when the sun will rise and when the sun will set. The sunset time must be after the sunrise time.
 
-Simple Calendar will calculate a gradual change in sunrise and sunset times as a season progresses based on this seasons sunrise/sunset time and the next seasons sunrise/sunset time.
+Simple Calendar Reborn will calculate a gradual change in sunrise and sunset times as a season progresses based on this seasons sunrise/sunset time and the next seasons sunrise/sunset time.
 
 ## Icon
 

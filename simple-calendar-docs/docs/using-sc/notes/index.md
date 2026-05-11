@@ -7,7 +7,7 @@ Notes are great ways to add reminders or events to the calendar!
 Notes are stored as [journal entries](https://foundryvtt.com/article/journal/) in their own folder in the journal directory. By default, this folder is hidden from view but a Gamemaster [can enable it to be visible](../../global-configuration/settings.md) if they wish.
 
 :::caution Important
-Only notes in this folder will be read by Simple Calendar! If notes are moved from this folder they will not appear in the module.
+Only notes in this folder will be read by Simple Calendar Reborn! If notes are moved from this folder they will not appear in the module.
 :::
 
 ## Note List
@@ -74,11 +74,11 @@ The note details dialog is a customized journal sheet that displays all the info
 
 ## Note Reminders
 
-Users can tell Simple Calendar that they would like to be reminded about certain notes when the in game time meets or passes the time of the note.
+Users can tell Simple Calendar Reborn that they would like to be reminded about certain notes when the in game time meets or passes the time of the note.
 
 ### Setting A Reminder
 
-There are several ways to tell Simple Calendar you want to be reminded about a note!
+There are several ways to tell Simple Calendar Reborn you want to be reminded about a note!
 
 #### When Creating A Note
 
@@ -86,7 +86,7 @@ When creating a new note you can specify that you want to be reminded about this
 
 #### When Viewing A Note
 
-When you are looking at the [note details](#note-details) clicking on the reminder button will tell Simple Calendar to remind you about this note!
+When you are looking at the [note details](#note-details) clicking on the reminder button will tell Simple Calendar Reborn to remind you about this note!
 
 #### Right-Clicking On A Note
 

@@ -13,7 +13,7 @@ Clicking on the Add Note button will create a new note for that day and open up 
 
 ## Note Fields
 
-Notes have several custom fields that can be filled out to set how they work within Simple Calendar. The page functionality should be the same as normal journal entries just styled to match the note dialog.
+Notes have several custom fields that can be filled out to set how they work within Simple Calendar Reborn. The page functionality should be the same as normal journal entries just styled to match the note dialog.
 
 ![](../../images/note-edit-details.png)
 

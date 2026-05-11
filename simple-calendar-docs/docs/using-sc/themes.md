@@ -1,6 +1,6 @@
 # Themes
 
-Simple Calendar comes bundled with several themes for users to choose from. Each player can choose which theme they wish to use by changing the `Theme` setting under the [Client Settings](../global-configuration/settings.md#client-settings) section of the configuration.
+Simple Calendar Reborn comes bundled with several themes for users to choose from. Each player can choose which theme they wish to use by changing the `Theme` setting under the [Client Settings](../global-configuration/settings.md#client-settings) section of the configuration.
 
 ## Global
 
@@ -26,7 +26,7 @@ A light mode or light-colored theme.
 
 ### Classic
 
-A theme made to match the original look of Simple Calendar version 1.x. This theme also works well for systems that use the default look and feel of Foundry VTT.
+A theme made to match the original look of Simple Calendar Reborn version 1.x. This theme also works well for systems that use the default look and feel of Foundry VTT.
 
 ![](../images/sc-theme-classic.png)
 
@@ -42,7 +42,7 @@ The currently available system specific themes are:
 
 This theme is for the [Das Schwarze Auge / The Dark Eye (5th Edition)](https://foundryvtt.com/packages/dsa5) system.
 
-This theme uses the styling of DSA's dialogs to make Simple Calendar look like it fits within the system.
+This theme uses the styling of DSA's dialogs to make Simple Calendar Reborn look like it fits within the system.
 
 ![](../images/sc-theme-dsa5.png)
 
@@ -52,7 +52,7 @@ This theme uses the styling of DSA's dialogs to make Simple Calendar look like i
 
 This theme is for the [Eclipse Phase 2E](https://foundryvtt.com/packages/eclipsephase) system.
 
-This theme uses the styling of Eclipse Phases dialogs to make Simple Calendar look like it fits within the system.
+This theme uses the styling of Eclipse Phases dialogs to make Simple Calendar Reborn look like it fits within the system.
 
 ![](../images/sc-theme-eclipsephase.png)
 
@@ -62,7 +62,7 @@ This theme uses the styling of Eclipse Phases dialogs to make Simple Calendar lo
 
 This theme is for the [Forbidden Lands](https://foundryvtt.com/packages/forbidden-lands) system.
 
-This theme uses the styling of Forbidden Lands dialogs to make Simple Calendar look like it fits within the system.
+This theme uses the styling of Forbidden Lands dialogs to make Simple Calendar Reborn look like it fits within the system.
 
 ![](../images/sc-theme-forbidden-lands.png)
 
@@ -72,7 +72,7 @@ This theme uses the styling of Forbidden Lands dialogs to make Simple Calendar l
 
 This theme is for the [Starfinder](https://foundryvtt.com/packages/sfrpg) system.
 
-This theme uses the styling of Starfinder's dialogs to make Simple Calendar look like it fits within the system.
+This theme uses the styling of Starfinder's dialogs to make Simple Calendar Reborn look like it fits within the system.
 
 ![](../images/sc-theme-sfrpg.png)
 
@@ -82,7 +82,7 @@ This theme uses the styling of Starfinder's dialogs to make Simple Calendar look
 
 This theme is for the [Warhammer 40,000 Roleplay: Wrath and Glory](https://foundryvtt.com/packages/wrath-and-glory) system.
 
-This theme uses the styling of Wrath & Glory's dialogs to make Simple Calendar look like it fits within the system.
+This theme uses the styling of Wrath & Glory's dialogs to make Simple Calendar Reborn look like it fits within the system.
 
 ![](../images/sc-theme-wrath-and-glory.png)
 
@@ -92,7 +92,7 @@ This theme uses the styling of Wrath & Glory's dialogs to make Simple Calendar l
 
 This theme is for the [Warhammer Fantasy Roleplay 4th Edition](https://foundryvtt.com/packages/wfrp4e) system.
 
-This theme uses the styling of Warhammer Fantasy Roleplay dialogs to make Simple Calendar look like it fits within the system.
+This theme uses the styling of Warhammer Fantasy Roleplay dialogs to make Simple Calendar Reborn look like it fits within the system.
 
 ![](../images/sc-theme-wfrp4e.png)
 
@@ -102,4 +102,4 @@ This theme uses the styling of Warhammer Fantasy Roleplay dialogs to make Simple
 
 These themes are designed to match a specific module, usually a module that changes the entire look/feel of foundry. They are only available if that module is installed and active as they will borrow assets from that module.
 
-There are currently no module specific themes in Simple Calendar.
+There are currently no module specific themes in Simple Calendar Reborn.

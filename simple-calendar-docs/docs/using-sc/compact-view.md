@@ -2,7 +2,7 @@
 
 ![](../images/calendar-compact-view.png)
 
-Simple Calendar also allows users to view the module in a compact view. This view has a much more limited view but takes up less screen space for ease of keeping it always open.
+Simple Calendar Reborn also allows users to view the module in a compact view. This view has a much more limited view but takes up less screen space for ease of keeping it always open.
 
 The compact view will show:
 
@@ -27,4 +27,4 @@ To switch to the compact view, simple double-click the header of the main applic
 
 ### Open In Compact View
 
-Each player can also [choose if Simple Calendar opens in compact view](client-settings#open-in-compact-view) anytime the calendar is opened.
+Each player can also [choose if Simple Calendar Reborn opens in compact view](client-settings#open-in-compact-view) anytime the calendar is opened.

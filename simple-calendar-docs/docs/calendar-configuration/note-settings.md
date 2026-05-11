@@ -1,6 +1,6 @@
 # Note Settings
 
-This section contains all the options around notes within Simple Calendar.
+This section contains all the options around notes within Simple Calendar Reborn.
 
 ![](../images/calendar-notes.png)
 

@@ -1,6 +1,6 @@
 # Switching Calendars
 
-If there is more than one calendar configured in Simple Calendar a button will appear on the main application to allow switching between them.
+If there is more than one calendar configured in Simple Calendar Reborn a button will appear on the main application to allow switching between them.
 
 Clicking the button will show a list of all configured calendars.
 
@@ -26,7 +26,7 @@ Changing a calendar to be active will do the following things:
 
 - Change the [calendar view](calendar-view.md) for every connected player to the new active calendar.
 - Allow users that have [permission to change the date and time](../global-configuration/permissions.md) to change the date and time of this calendar.
-- Updates the world time to the new calendars time stamp. This will update any other time modules that use Simple Calendar to display the new date and time.
+- Updates the world time to the new calendars time stamp. This will update any other time modules that use Simple Calendar Reborn to display the new date and time.
 
 :::danger
 This will also cause any **affects/conditions** that expire after a certain amount of time **to either expire or last longer** than intended.
