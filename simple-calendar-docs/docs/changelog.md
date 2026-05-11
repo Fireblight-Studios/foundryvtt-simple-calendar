@@ -1,5 +1,72 @@
 # Change Log
 
+## v2.5.5
+## What's Changed
+
+- Back ported fix for #41 , which fixes a regression introduced in #37 ensuring config backups can be imported regardless of if calendars are included or not.
+
+
+**Full Changelog**: https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/compare/v2.5.4...v2.5.5
+
+---
+### Note
+
+* While I have moved on to supporting Foundry v14 with versions v2.6+, I still will backport major fixes like this one to for usage with Foundry v13 for the rest of 2026, as I understand many users (like myself) have not yet migrated over to the latest version of Foundry.
+---
+## v2.5.4
+### What's Changed
+* Fixed GH-24 by adding logic to convert null to "null" to fix the Starting Weekday dropdown in settings by Arctis Fireblight in https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/pull/31
+* Fix theme support for WFRP4e version +9.0.0 GH-27 by Arctis Fireblight in https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/pull/32
+* Update readme by Arctis Fireblight in https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/pull/33
+* Fix GH-28: Prevent unnecessary calendar redraws by comparing date changes by Arctis Fireblight in https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/pull/34
+* Bump version to 2.5.4 by Arctis Fireblight in https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/pull/35
+* Next set of rebranding changes by Arctis Fireblight in https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/pull/36
+
+
+ **Full Changelog**: https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/compare/v2.5.3...v2.5.4
+
+---
+## v2.5.3
+### What's Changed
+* Update Readme by Arctis Fireblight in https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/pull/11
+* Fixed 'Render and Build' test by Arctis Fireblight in https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/pull/21
+* Added support for migrating notes from Simple Calendar by Arctis Fireblight in https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/pull/20
+* Bump version and update package name by Arctis Fireblight in https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/pull/19
+
+* **Full Changelog**: https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/compare/v2.5.2...v2.5.3
+
+---
+
+## v2.5.2
+### What's Changed
+* Fixed the note editor by Arctis Fireblight in https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/pull/10
+
+**Full Changelog**: https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/compare/v2.5.1...v2.5.2
+
+---
+
+## v2.5.1
+### What's Changed
+* Update repository URLs to reflect migration to Fireblight-Studios ownership. by Arctis Fireblight in https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/pull/4
+* Bump version by Arctis Fireblight in https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/pull/5
+
+
+**Full Changelog**: https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/compare/v2.5.0...v2.5.1
+
+---
+
+## v2.5.0 - Foundry V13 Support and Forked by Arctis Fireblight
+### What's Changed
+* Update for V13 compatibility by Arctis-Fireblight in https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/pull/1
+* Forked and rebranded the module as "foundryvtt-simple-calendar-reborn… by Arctis-Fireblight in https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/pull/2
+* Fix Change Month Test to account for November and December by Arctis-Fireblight in https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/pull/3
+
+**Full Changelog**: https://github.com/Fireblight-Studios/foundryvtt-simple-calendar/compare/v2.4.18...v2.5.0
+
+---
+### Below is the changelog for Simple Calendar.
+
+---
 ## 2.4.18 - Bug Fixes
 
 ![](https://img.shields.io/badge/release%20date-May%2024%2C%202024-blue)
