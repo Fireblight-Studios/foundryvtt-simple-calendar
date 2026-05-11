@@ -4,7 +4,7 @@ There are 3 ways to install the module:
 
 ## Through Foundry
 
-Foundry has a built-in directory of modules that you can install. The easiest way is to use this feature and search for "Simple Calendar" and install!
+Foundry has a built-in directory of modules that you can install. The easiest way is to use this feature and search for "Simple Calendar Reborn" and install!
 
 ## module.json
 
